@@ -1,7 +1,7 @@
 name: "CB Molecular Genetics Landing Page"
 output_dir: 'docs'
 navbar:
-  title: "NOAA Branded website"
+  title: "CB Molecular Genetics Landing Page"
   left:
     - text: "Home"
       href: index.html
