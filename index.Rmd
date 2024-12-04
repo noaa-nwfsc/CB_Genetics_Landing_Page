@@ -1,0 +1,36 @@
+---
+title: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Level 1
+
+The file `_site.yml` specifies the look and nav bar structure. A footer can be added to that file in which case the same footer is added to each page. If you don't want that, then you can delete the `footer.html` bit in `_site.yml` and instead add this code at the end of each Rmd file.
+
+    `​``{r child="footerrmd.Rmd"}
+    ```
+
+## Level 2
+
+Some information and a link. <http://rmarkdown.rstudio.com>.
+
+Give installation instructions:
+
+```
+remotes::install_github("username/repo")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+```{r child="disclaimer.Rmd"}
+```

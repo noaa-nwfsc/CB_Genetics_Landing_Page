@@ -1,0 +1,17 @@
+name: "NOAA Branded website"
+output_dir: 'docs'
+navbar:
+  title: "NOAA Branded website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output:
+  html_document:
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css:
+      - "static/extra.css"
+      - "static/fit-page.css"
