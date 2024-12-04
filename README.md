@@ -1,13 +1,4 @@
-# Simple NOAA branded website with
+# Welcome to the NWFSC Conservation Biology- Molecular Genetics Landing Page
 
-* License
-* Disclaimers
-* NMFS palette
+This is a current work in progress, intended to house code for active and finished projects among out group. Stay tuned for more updates!
 
-# How do I use?
-
-1. Click the big green button that says "Use this Template" and follow the instructions
-2. On your new repo, enable GitHub Pages by going to Settings and then clicking Pages in the sidebar. Select to make Pages from the `docs` folder.
-<img width="313" alt="image" src="https://user-images.githubusercontent.com/2545978/195947963-73eb3544-68ff-4e50-83c0-33a18fa787d5.png">
-3. Make sure GitHub Actions are allowed by going to Settings then Actions - General in the sidebar.
-4. Make a change to your repo (say the Readme), then click on the Actions tab. You should see the website build action followed by the GitHub Pages Actions run.
