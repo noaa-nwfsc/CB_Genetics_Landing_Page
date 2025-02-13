@@ -1,1 +1,1 @@
-Sitemap: https://nmfs-opensci.github.io/NOAA-quarto-simple/sitemap.xml
+Sitemap: https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/sitemap.xml
