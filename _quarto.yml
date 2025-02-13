@@ -16,7 +16,7 @@ website:
   sidebar:
     background: "#D9E3E4"
     logo: "NOAA_FISHERIES_logoH_web.png"
-    favicon: images/favicon.ico
+    favicon: "favicon.ico"
     pinned: true
     align: center
     tools: 
