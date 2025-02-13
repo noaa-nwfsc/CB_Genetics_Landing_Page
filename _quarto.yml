@@ -3,9 +3,9 @@ project:
 
 website: 
   page-navigation: true
-  title: "NOAA quarto simple" 
-  site-url: "https://nmfs-opensci.github.io/NOAA-quarto-simple" 
-  repo-url: "https://github.com/nmfs-opensci/NOAA-quarto-simple"
+  title: "CB Genetics Landing Page" 
+  site-url: "https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/" 
+  repo-url: "https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
@@ -15,8 +15,8 @@ website:
   
   sidebar:
     background: "#D9E3E4"
-    logo: "https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png"
-    favicon: images/favicon.ico
+    logo: "NOAA_FISHERIES_H.png"
+    favicon: images/DNA_Logo.png
     pinned: true
     align: center
     tools: 
