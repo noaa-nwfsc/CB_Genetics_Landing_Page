@@ -5,7 +5,7 @@ title: CB Genetics Github Repositories
 ## Project Repositories
 
 | Project | Description | Data Input(s) | Contact Authors |
-|---------|-------------|---------------|-----------------|
+|------|-------------|------|------|
 | 12      | 12   |    12 |   12   |
 | 123     | 123  |   123 |  123   |
 | 1       | 1    |     1 |   1    |
