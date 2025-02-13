@@ -1,5 +1,5 @@
 ---
-title: "NOAA quarto simple with R"
+title: "CB Genetics Landing Page"
 subtitle: "A simple Quarto webpage with a book layout"
 page-layout: full
 ---
