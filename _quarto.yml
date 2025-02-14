@@ -16,7 +16,7 @@ website:
   sidebar:
     background: "#D9E3E4"
     logo: "NOAA_FISHERIES_logoH_web.png"
-    favicon: favicon.ico
+    favicon: "favicon.ico"
     pinned: true
     align: center
     tools: 
@@ -35,14 +35,14 @@ website:
         text: Home
       - href: content/project-repos.qmd
         text: Project Repositories
-      - href: content/customizing.qmd
-        text: Customizing
-      - href: content/rendering.qmd
-        text: Rendering
-      - href: content/rmarkdown.Rmd
-        text: R Markdown files
-      - href: content/code.qmd
-        text: Code in your files
+      - href: content/github-resources.qmd
+        text: Github Resources
+      - href: content/data-management.qmd
+        text: Data Management
+      - href: content/open-science.qmd
+        text: Open Science
+      - href: content/sedna-resources.qmd
+        text: Sedna Resources
       - href: content/acknowledgements.qmd
         text: Acknowledgements
 
