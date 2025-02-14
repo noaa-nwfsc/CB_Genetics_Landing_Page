@@ -92,29 +92,29 @@
   {
     "objectID": "content/github-resources.html",
     "href": "content/github-resources.html",
-    "title": "Customization",
+    "title": "Github Resources",
     "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation.",
+    "text": "What is Github?\nSome good explanatory stuff here, general overview, benefits, etc. Find language available elsewhere to use.\nNeed more visual convincing? Check out this illustrated blog post explianing how github is used for supporting, reusing, contributing, and failing.",
     "crumbs": [
       "Github Resources"
     ]
   },
   {
-    "objectID": "content/github-resources.html#quarto-documentation",
-    "href": "content/github-resources.html#quarto-documentation",
-    "title": "Customization",
+    "objectID": "content/github-resources.html#why-github",
+    "href": "content/github-resources.html#why-github",
+    "title": "Github Resources",
     "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation.",
+    "text": "What is Github?\nSome good explanatory stuff here, general overview, benefits, etc. Find language available elsewhere to use.\nNeed more visual convincing? Check out this illustrated blog post explianing how github is used for supporting, reusing, contributing, and failing.",
     "crumbs": [
       "Github Resources"
     ]
   },
   {
-    "objectID": "content/github-resources.html#examples",
-    "href": "content/github-resources.html#examples",
-    "title": "Customization",
-    "section": "Examples",
-    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory.",
+    "objectID": "content/github-resources.html#github-trainings-and-videos",
+    "href": "content/github-resources.html#github-trainings-and-videos",
+    "title": "Github Resources",
+    "section": "Github Trainings and Videos",
+    "text": "Github Trainings and Videos\nThe NOAA Fisheries GitHub Governance Team has an excellent suite of videos on git skills. Check out those videos here.\nThere are lots of ways to git, but here are resources on using Github Desktop. (Coming soon)\nGithub skills for self-guided learning found here.\nGuidance and best practices for NMFS github users provided by NMFS Open Science can be found here.",
     "crumbs": [
       "Github Resources"
     ]
