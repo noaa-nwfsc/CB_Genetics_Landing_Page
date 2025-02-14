@@ -1,11 +1,20 @@
 ---
 title: "CB Genetics Landing Page"
-subtitle: "A hub for code repositories and resources"
+subtitle: "A hub for Github repositories and resources"
 page-layout: full
 ---
 
-Info about webpage
+This page is built and maintained by the Conservation Biology Genetics and Evolution Program at the NOAA NWFSC.
 
-## Other Important Stuff
 
-yes.
+## Information you will find here
+
+On this page you will find links to github repositories for current and past projects of our group. In addition, we have links to Github resources, open science resources, Sednda resources, etc.
+
+If you have ideas on pages or resources to add, contact xxx.
+
+
+
+### NWFSC Molecular Genetics Lab Page
+
+For links to the genetics lab databases, protocols, equipment signups, etc. visit the [NWFSC Molecular Genetics Lab Page](https://sites.google.com/noaa.gov/moleculargeneticslab/home).
