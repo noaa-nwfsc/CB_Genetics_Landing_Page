@@ -1,17 +1,23 @@
 ---
-title: Customization
+title: Github Resources
 ---
 
-## Quarto documentation
+## Why Github?
 
-Quarto allow many bells and whistles to make nice output. Read the documentation here [Quarto documentation](https://quarto.org/docs/guide/).
+What is Github?
 
-## Examples
+Some good explanatory stuff here, general overview, benefits, etc. Find language available elsewhere to use.
 
-Looking at other people's Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.
+Need more visual convincing? Check out this [illustrated blog post](https://openscapes.org/blog/2022-05-27-github-illustrated-series/) explianing how github is used for supporting, reusing, contributing, and failing.
 
-* [Quarto gallery](https://quarto.org/docs/gallery/)
-* [nmfs-openscapes](https://nmfs-openscapes.github.io/)
-* [Fay lab manual](https://thefaylab.github.io/lab-manual/)
-* [quarto-titlepages](https://nmfs-opensci.github.io/quarto_titlepages/) Note the link to edit is broken. Go to repo and look in `documentation` directory.
+
+## Github Trainings and Videos
+
+The NOAA Fisheries GitHub Governance Team has an excellent suite of videos on git skills. Check out those videos [here](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/training).
+
+There are lots of ways to git, but here are resources on using Github Desktop. (Coming soon)
+
+Github skills for self-guided learning found [here](https://skills.github.com/).
+
+Guidance and best practices for NMFS github users provided by NMFS Open Science can be found [here](https://nmfs-opensci.github.io/GitHub-Guide/).
 
