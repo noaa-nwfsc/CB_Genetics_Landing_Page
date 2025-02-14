@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publishing – CB Genetics Landing Page</title>
+<title>Open Science – CB Genetics Landing Page</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -165,9 +165,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#turn-on-github-pages-for-your-repo" id="toc-turn-on-github-pages-for-your-repo" class="nav-link active" data-scroll-target="#turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</a></li>
-  <li><a href="#do-your-first-publish-to-gh-pages" id="toc-do-your-first-publish-to-gh-pages" class="nav-link" data-scroll-target="#do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></a></li>
-  <li><a href="#dont-like-using-gh-pages" id="toc-dont-like-using-gh-pages" class="nav-link" data-scroll-target="#dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</a></li>
+  <li><a href="#what-is-open-science" id="toc-what-is-open-science" class="nav-link active" data-scroll-target="#what-is-open-science">What is Open Science?</a></li>
+  <li><a href="#nmfs-open-science-resources" id="toc-nmfs-open-science-resources" class="nav-link" data-scroll-target="#nmfs-open-science-resources">NMFS Open Science Resources</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/open-science.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/open-science.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -176,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Publishing</h1>
+<h1 class="title">Open Science</h1>
 </div>
 
 
@@ -193,90 +192,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>To get your Quarto webpage to show up with the url</p>
-<pre><code>yourname.github.io/yourrepo</code></pre>
-<p>you have a few steps.</p>
-<section id="turn-on-github-pages-for-your-repo" class="level2">
-<h2 class="anchored" data-anchor-id="turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</h2>
-<ul>
-<li>Turn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.</li>
-<li>Turn on GitHub Actions under Settings &gt; Actions &gt; General</li>
-</ul>
-<p>The GitHub Action will automatically recreate your website when you push to GitHub <strong>after</strong> you do the initial <code>gh-pages</code> set-up</p>
+<section id="what-is-open-science" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-open-science">What is Open Science?</h2>
+<p>Find some language from openscpaes to describe here</p>
 </section>
-<section id="do-your-first-publish-to-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></h2>
-<p>The first time you publish to <code>gh-pages</code>, you need to do so locally.</p>
-<ul>
-<li>On your local computer, open a terminal window and <code>cd</code> to your repo directory. Here is what that <code>cd</code> command looks like for me. You command will look different because your local repo will be somewhere else on your computer.</li>
-</ul>
-<pre><code>cd ~/Documents/GitHub/NOAA-quarto-simple</code></pre>
-<ul>
-<li>Publish to the <code>gh-pages</code>. In the terminal type</li>
-</ul>
-<pre><code>quarto publish gh-pages</code></pre>
-<p>This is going to render your webpage and then push the <code>_site</code> contents to the <code>gh-pages</code> branch.</p>
-</section>
-<section id="dont-like-using-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</h2>
-<p>In some cases, you don’t want your website on the <code>gh-pages</code> branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the <code>gh-pages</code> branch.</p>
-<p>Here are the changes you need to make if you to avoid <code>gh-pages</code> branch.</p>
-<ul>
-<li>At the top of <code>_quarto.yml</code> add the following:</li>
-</ul>
-<pre><code>project: 
-  type: website
-  output-dir: docs</code></pre>
-<ul>
-<li>On GitHub under Settings &gt; Pages set pages to be made from the <code>main</code> branch and the docs directory.</li>
-<li>Make sure <code>docs</code> is not listed in <code>.gitignore</code></li>
-<li>Publish the site the first time locally using <code>quarto publish</code> from the terminal</li>
-<li>Change the GitHub Action because you can’t use <code>quarto publish gh-pages</code>. You’ll need to push to the main branch yourself (in the GitHub Action)</li>
-</ul>
-<pre><code>on:
-  push:
-    branches: main
-
-name: Render and Publish
-
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v2 
-        
-      - name: Set up R (needed for Rmd)
-        uses: r-lib/actions/setup-r@v2
-
-      - name: Install packages (needed for Rmd)
-        run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "jsonlite"))'
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          # To install LaTeX to build PDF book 
-          # tinytex: true 
-          # uncomment below and fill to pin a version
-          # version: 0.9.600
-      
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
-
-      - name: Set up Git
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-
-      - name: Commit all changes and push
-        run: |
-          git add -A &amp;&amp; git commit -m 'Build site' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"</code></pre>
+<section id="nmfs-open-science-resources" class="level2">
+<h2 class="anchored" data-anchor-id="nmfs-open-science-resources">NMFS Open Science Resources</h2>
+<p>NMFS Open Science <a href="https://nmfs-opensci.github.io/">public home page</a></p>
+<p>NMFS Open Science <a href="https://sites.google.com/noaa.gov/nmfs-hq-st-open-science/home">internal home page</a> - Links to NMFS Open Science calendar of events</p>
+<p>NMFS Open Science <a href="https://nmfs-opensci.github.io/ResourceBook/">Resource Book</a></p>
+<p>NMFS Openscapes is a collaboration between NOAA Fisheries and Openscapes to promote a data-driven culture through the adoption of open science tools and strategies. Openscapes provides team-based training in reproducible scientific workflows, data management, coding, and optimal team collaboration and project management. Keep an eye out for upcoming openscapes champions cohort opportunities on their <a href="https://nmfs-openscapes.github.io/">webpage</a>.</p>
 
 
 </section>

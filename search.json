@@ -173,39 +173,29 @@
   {
     "objectID": "content/open-science.html",
     "href": "content/open-science.html",
-    "title": "Publishing",
+    "title": "Open Science",
     "section": "",
-    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps.",
+    "text": "Find some language from openscpaes to describe here",
     "crumbs": [
       "Open Science"
     ]
   },
   {
-    "objectID": "content/open-science.html#turn-on-github-pages-for-your-repo",
-    "href": "content/open-science.html#turn-on-github-pages-for-your-repo",
-    "title": "Publishing",
-    "section": "Turn on GitHub Pages for your repo",
-    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up",
+    "objectID": "content/open-science.html#what-is-open-science",
+    "href": "content/open-science.html#what-is-open-science",
+    "title": "Open Science",
+    "section": "",
+    "text": "Find some language from openscpaes to describe here",
     "crumbs": [
       "Open Science"
     ]
   },
   {
-    "objectID": "content/open-science.html#do-your-first-publish-to-gh-pages",
-    "href": "content/open-science.html#do-your-first-publish-to-gh-pages",
-    "title": "Publishing",
-    "section": "Do your first publish to gh-pages",
-    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch.",
-    "crumbs": [
-      "Open Science"
-    ]
-  },
-  {
-    "objectID": "content/open-science.html#dont-like-using-gh-pages",
-    "href": "content/open-science.html#dont-like-using-gh-pages",
-    "title": "Publishing",
-    "section": "Don’t like using gh-pages?",
-    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\"",
+    "objectID": "content/open-science.html#nmfs-open-science-resources",
+    "href": "content/open-science.html#nmfs-open-science-resources",
+    "title": "Open Science",
+    "section": "NMFS Open Science Resources",
+    "text": "NMFS Open Science Resources\nNMFS Open Science public home page\nNMFS Open Science internal home page - Links to NMFS Open Science calendar of events\nNMFS Open Science Resource Book\nNMFS Openscapes is a collaboration between NOAA Fisheries and Openscapes to promote a data-driven culture through the adoption of open science tools and strategies. Openscapes provides team-based training in reproducible scientific workflows, data management, coding, and optimal team collaboration and project management. Keep an eye out for upcoming openscapes champions cohort opportunities on their webpage.",
     "crumbs": [
       "Open Science"
     ]
