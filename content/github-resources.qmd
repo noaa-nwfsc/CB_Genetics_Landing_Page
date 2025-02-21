@@ -4,20 +4,75 @@ title: Github Resources
 
 ## Why Github?
 
-What is Github?
-
-Some good explanatory stuff here, general overview, benefits, etc. Find language available elsewhere to use.
-
-Need more visual convincing? Check out this [illustrated blog post](https://openscapes.org/blog/2022-05-27-github-illustrated-series/) explianing how github is used for supporting, reusing, contributing, and failing.
+Not sure why we use github? Check out this [illustrated blog post](https://openscapes.org/blog/2022-05-27-github-illustrated-series/) explianing how github is used for supporting, reusing, contributing, and failing.
 
 
 ## Github Trainings and Videos
 
 The NOAA Fisheries GitHub Governance Team has an excellent suite of videos on git skills. Check out those videos [here](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/training).
 
-There are lots of ways to git, but here are resources on using Github Desktop. (Coming soon)
-
 Github skills for self-guided learning found [here](https://skills.github.com/).
 
 Guidance and best practices for NMFS github users provided by NMFS Open Science can be found [here](https://nmfs-opensci.github.io/GitHub-Guide/).
+
+The [NOAA Omics Technical Portal](https://noaa-omics-technical-portal.readthedocs.io/en/latest/index.html) has a suite of resources specific to 'Omics data, including example analyses!
+
+The [NOAA Omics Discussion Forum](https://github.com/orgs/NOAA-Omics/discussions/2) may also be a good place to ask and answer questions regarding 'Omics analyses.
+
+
+## NOAA Github Repository Guidelines
+
+From the [NMFS Github Guide](https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines), all repositories, regardless of purpose, must follow these general guidelines:
+
+* PII and BII should never be shared (on purpose or inadvertently) on GitHub regardless of whether the repository is in a private or public repository.
+* No sensitive information should be shared in repositories, including (but is not limited to) usernames, passwords, login information, port numbers, IP addresses, server names, Application Programming Interface (API) keys, Personally Identifiable Information (PII), Business Identifiable Information (BII), or confidential data.
+* GitHub is not a back-up service nor is it a data repository with archiving. Other tools are designed for this purpose.
+* Only scientific content that can be reasonably classified as FISMA Low should be shared on GitHub.
+* Repositories that have code that interacts with APIs using IP addresses, usernames, passwords, secrets, or credentials must take steps to prevent committing of “secrets” to GitHub.
+
+
+## Required Github Repository Components
+
+From the [NMFS Github Guide](https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines), your repository should include a README, the government product DISCLAIMER, and LICENSE file. If the work is something that can be cited, then also include citation information and a DOI.
+
+#### README
+This file should provide a description of the repository. The contents of the README file will vary greatly depending on the application, but there are a few common elements for NOAA Fisheries work products: title, description, developer information, disclaimer, NOAA Fisheries logo, and DOC footer.
+
+#### DISCLAIMER.md
+Repositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the disclaimer text as a footnote within the repository’s README.md and any web content available from that repository. Be careful not to use NOAA logos and and NOAA Fisheries branding in a way that could imply official communication. NOAA logos should be used to indicate your affiliation and acknowledge support and funding. 
+
+The following DISCLAIMER.md file is put in the root of the repository.
+::: {.callout-note title="DISCLAIMER.md"}
+This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
+:::
+
+#### LICENSE Files
+You should add an open license file to the GitHub repository before work begins. This establishes from the moment work starts that all work is open source (as required for publicly released federally funded work). 
+
+To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select CC0 1.0 Universal.
+
+You can also add license information to the bottom of your README.
+::: {.callout-note title="LICENSE"}
+This content was created by U.S. Government employees as part of their official duties. This content is not subject to copyright in the United States (17 U.S.C. §105) and is in the public domain within the United States of America. Additionally, copyright is waived worldwide through the CC0 1.0 Universal public domain dedication.
+:::
+
+
+## Github Basics Glossary
+
+A full list of terms can be found [here](https://docs.github.com/en/get-started/learning-about-github/github-glossary), but below are some common terms to get acquainted with.
+
+| Term | Definition |
+|---|------------|
+| **branch** | A branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or main branch allowing you to work freely without disrupting the "live" version. When you've made the changes you want to make, you can merge your branch back into the main branch to publish your changes. |
+| **clone** | A clone is a copy of a repository that lives on your computer instead of on a website's server somewhere, or the act of making that copy. When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. The repository you cloned is still connected to the remote version so that you can push your local changes to the remote to keep them synced when you're online. |
+| **commit** | A commit, or "revision", is an individual change to a file (or set of files). When you make a commit to save your work, Git creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to keep record of the specific changes committed along with who made them and when. Commits usually contain a commit message which is a brief description of what changes were made. |
+| **directory** | A folder containing one or more files or folders. You can create directories to organize the contents of a repository. |
+| **fork**  | A fork is a personal copy of another user's repository that lives on your account. Forks allow you to freely make changes to a project without affecting the original upstream repository. You can also open a pull request in the upstream repository and keep your fork synced with the latest changes since both repositories are still connected.|
+| **pull** | Pull refers to when you are fetching in changes and merging them. For instance, if someone has edited the remote file you're both working on, you'll want to pull in those changes to your local copy so that it's up to date. |
+| **pull request** | Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository's collaborators. Like issues, pull requests each have their own discussion forum. |
+| **push** | To push means to send your committed changes to a remote repository on GitHub.com. For instance, if you change something locally, you can push those changes so that others may access them. |
+| **repository** | A repository is the most basic element of GitHub. They're easiest to imagine as a project's folder. A repository contains all of the project files (including documentation), and stores each file's revision history. Repositories can have multiple collaborators and can be either public or private. |
+| 
+
+
 
