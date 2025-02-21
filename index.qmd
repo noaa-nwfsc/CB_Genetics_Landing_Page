@@ -7,9 +7,8 @@ page-layout: full
 This page is built and maintained by the Conservation Biology Genetics and Evolution Program at the NOAA NWFSC.
 
 
-## Information you will find here
 
-On this page you will find links to github repositories for current and past projects of our group. In addition, we have links to Github resources, open science resources, Sednda resources, etc.
+On this page you will find links to github repositories for current and past projects of our group. In addition, we have links to Github resources, open science resources, Sedna resources, etc.
 
 If you have ideas on pages or resources to add, contact xxx.
 
