@@ -44,7 +44,7 @@
     "href": "content/github-resources.html",
     "title": "Github Resources",
     "section": "",
-    "text": "What is Github?\nSome good explanatory stuff here, general overview, benefits, etc. Find language available elsewhere to use.\nNeed more visual convincing? Check out this illustrated blog post explianing how github is used for supporting, reusing, contributing, and failing.",
+    "text": "Not sure why we use github? Check out this illustrated blog post explianing how github is used for supporting, reusing, contributing, and failing.",
     "crumbs": [
       "Github Resources"
     ]
@@ -54,7 +54,7 @@
     "href": "content/github-resources.html#why-github",
     "title": "Github Resources",
     "section": "",
-    "text": "What is Github?\nSome good explanatory stuff here, general overview, benefits, etc. Find language available elsewhere to use.\nNeed more visual convincing? Check out this illustrated blog post explianing how github is used for supporting, reusing, contributing, and failing.",
+    "text": "Not sure why we use github? Check out this illustrated blog post explianing how github is used for supporting, reusing, contributing, and failing.",
     "crumbs": [
       "Github Resources"
     ]
@@ -64,7 +64,37 @@
     "href": "content/github-resources.html#github-trainings-and-videos",
     "title": "Github Resources",
     "section": "Github Trainings and Videos",
-    "text": "Github Trainings and Videos\nThe NOAA Fisheries GitHub Governance Team has an excellent suite of videos on git skills. Check out those videos here.\nThere are lots of ways to git, but here are resources on using Github Desktop. (Coming soon)\nGithub skills for self-guided learning found here.\nGuidance and best practices for NMFS github users provided by NMFS Open Science can be found here.",
+    "text": "Github Trainings and Videos\nThe NOAA Fisheries GitHub Governance Team has an excellent suite of videos on git skills. Check out those videos here.\nGithub skills for self-guided learning found here.\nGuidance and best practices for NMFS github users provided by NMFS Open Science can be found here.\nThe NOAA Omics Technical Portal has a suite of resources specific to ’Omics data, including example analyses!\nThe NOAA Omics Discussion Forum may also be a good place to ask and answer questions regarding ’Omics analyses.",
+    "crumbs": [
+      "Github Resources"
+    ]
+  },
+  {
+    "objectID": "content/github-resources.html#noaa-github-repository-guidelines",
+    "href": "content/github-resources.html#noaa-github-repository-guidelines",
+    "title": "Github Resources",
+    "section": "NOAA Github Repository Guidelines",
+    "text": "NOAA Github Repository Guidelines\nFrom the NMFS Github Guide, all repositories, regardless of purpose, must follow these general guidelines:\n\nPII and BII should never be shared (on purpose or inadvertently) on GitHub regardless of whether the repository is in a private or public repository.\nNo sensitive information should be shared in repositories, including (but is not limited to) usernames, passwords, login information, port numbers, IP addresses, server names, Application Programming Interface (API) keys, Personally Identifiable Information (PII), Business Identifiable Information (BII), or confidential data.\nGitHub is not a back-up service nor is it a data repository with archiving. Other tools are designed for this purpose.\nOnly scientific content that can be reasonably classified as FISMA Low should be shared on GitHub.\nRepositories that have code that interacts with APIs using IP addresses, usernames, passwords, secrets, or credentials must take steps to prevent committing of “secrets” to GitHub.",
+    "crumbs": [
+      "Github Resources"
+    ]
+  },
+  {
+    "objectID": "content/github-resources.html#required-github-repository-components",
+    "href": "content/github-resources.html#required-github-repository-components",
+    "title": "Github Resources",
+    "section": "Required Github Repository Components",
+    "text": "Required Github Repository Components\nFrom the NMFS Github Guide, your repository should include a README, the government product DISCLAIMER, and LICENSE file. If the work is something that can be cited, then also include citation information and a DOI.\n\nREADME\nThis file should provide a description of the repository. The contents of the README file will vary greatly depending on the application, but there are a few common elements for NOAA Fisheries work products: title, description, developer information, disclaimer, NOAA Fisheries logo, and DOC footer.\n\n\nDISCLAIMER.md\nRepositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the disclaimer text as a footnote within the repository’s README.md and any web content available from that repository. Be careful not to use NOAA logos and and NOAA Fisheries branding in a way that could imply official communication. NOAA logos should be used to indicate your affiliation and acknowledge support and funding.\nThe following DISCLAIMER.md file is put in the root of the repository. ::: {.callout-note title=“DISCLAIMER.md”} This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government. :::\n\n\nLICENSE Files\nYou should add an open license file to the GitHub repository before work begins. This establishes from the moment work starts that all work is open source (as required for publicly released federally funded work).\nTo add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select CC0 1.0 Universal.\nYou can also add license information to the bottom of your README. ::: {.callout-note title=“LICENSE”} This content was created by U.S. Government employees as part of their official duties. This content is not subject to copyright in the United States (17 U.S.C. §105) and is in the public domain within the United States of America. Additionally, copyright is waived worldwide through the CC0 1.0 Universal public domain dedication. :::",
+    "crumbs": [
+      "Github Resources"
+    ]
+  },
+  {
+    "objectID": "content/github-resources.html#github-basics-glossary",
+    "href": "content/github-resources.html#github-basics-glossary",
+    "title": "Github Resources",
+    "section": "Github Basics Glossary",
+    "text": "Github Basics Glossary\nA full list of terms can be found here, but below are some common terms to get acquainted with.\n\n\n\n\n\n\n\nTerm\nDefinition\n\n\n\n\nbranch\nA branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or main branch allowing you to work freely without disrupting the “live” version. When you’ve made the changes you want to make, you can merge your branch back into the main branch to publish your changes.\n\n\nclone\nA clone is a copy of a repository that lives on your computer instead of on a website’s server somewhere, or the act of making that copy. When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. The repository you cloned is still connected to the remote version so that you can push your local changes to the remote to keep them synced when you’re online.\n\n\ncommit\nA commit, or “revision”, is an individual change to a file (or set of files). When you make a commit to save your work, Git creates a unique ID (a.k.a. the “SHA” or “hash”) that allows you to keep record of the specific changes committed along with who made them and when. Commits usually contain a commit message which is a brief description of what changes were made.\n\n\ndirectory\nA folder containing one or more files or folders. You can create directories to organize the contents of a repository.\n\n\nfork\nA fork is a personal copy of another user’s repository that lives on your account. Forks allow you to freely make changes to a project without affecting the original upstream repository. You can also open a pull request in the upstream repository and keep your fork synced with the latest changes since both repositories are still connected.\n\n\npull\nPull refers to when you are fetching in changes and merging them. For instance, if someone has edited the remote file you’re both working on, you’ll want to pull in those changes to your local copy so that it’s up to date.\n\n\npull request\nPull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository’s collaborators. Like issues, pull requests each have their own discussion forum.\n\n\npush\nTo push means to send your committed changes to a remote repository on GitHub.com. For instance, if you change something locally, you can push those changes so that others may access them.\n\n\nrepository\nA repository is the most basic element of GitHub. They’re easiest to imagine as a project’s folder. A repository contains all of the project files (including documentation), and stores each file’s revision history. Repositories can have multiple collaborators and can be either public or private.",
     "crumbs": [
       "Github Resources"
     ]
@@ -74,17 +104,7 @@
     "href": "index.html",
     "title": "CB Genetics Landing Page",
     "section": "",
-    "text": "This page is built and maintained by the Conservation Biology Genetics and Evolution Program at the NOAA NWFSC.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#information-you-will-find-here",
-    "href": "index.html#information-you-will-find-here",
-    "title": "CB Genetics Landing Page",
-    "section": "Information you will find here",
-    "text": "Information you will find here\nOn this page you will find links to github repositories for current and past projects of our group. In addition, we have links to Github resources, open science resources, Sednda resources, etc.\nIf you have ideas on pages or resources to add, contact xxx.\n\nNWFSC Molecular Genetics Lab Page\nFor links to the genetics lab databases, protocols, equipment signups, etc. visit the NWFSC Molecular Genetics Lab Page.",
+    "text": "This page is built and maintained by the Conservation Biology Genetics and Evolution Program at the NOAA NWFSC.\nOn this page you will find links to github repositories for current and past projects of our group. In addition, we have links to Github resources, open science resources, Sedna resources, etc.\nIf you have ideas on pages or resources to add, contact xxx.\n\nNWFSC Molecular Genetics Lab Page\nFor links to the genetics lab databases, protocols, equipment signups, etc. visit the NWFSC Molecular Genetics Lab Page.",
     "crumbs": [
       "Home"
     ]
@@ -125,7 +145,7 @@
     "href": "content/open-science.html",
     "title": "Open Science",
     "section": "",
-    "text": "Find some language from openscpaes to describe here",
+    "text": "Open science is a movement that aims to make scientific research, data, and publications available to everyone. It encourages collaboration, transparency, and productivity.\nNOAA Fisheries has an Open Science Initiative with the intent to support scientists, developers, resource managers, and policy analysts in the adoption of modern, open, reproducible scientific workflows that enhance our already groundbreaking scientific work.This vision importantly also enables more timely fulfillment of NOAA’s Open Science mandates: * NOAA Data Strategy * NOAA Fisheries Data Vision * DOC Open Source Code Policy * Federal Data Strategy * [Federal Open Access Memo] * [Open Government National Action Plan]\nInformation pulled from Open Science at NOAA Fisheries",
     "crumbs": [
       "Open Science"
     ]
@@ -135,7 +155,7 @@
     "href": "content/open-science.html#what-is-open-science",
     "title": "Open Science",
     "section": "",
-    "text": "Find some language from openscpaes to describe here",
+    "text": "Open science is a movement that aims to make scientific research, data, and publications available to everyone. It encourages collaboration, transparency, and productivity.\nNOAA Fisheries has an Open Science Initiative with the intent to support scientists, developers, resource managers, and policy analysts in the adoption of modern, open, reproducible scientific workflows that enhance our already groundbreaking scientific work.This vision importantly also enables more timely fulfillment of NOAA’s Open Science mandates: * NOAA Data Strategy * NOAA Fisheries Data Vision * DOC Open Source Code Policy * Federal Data Strategy * [Federal Open Access Memo] * [Open Government National Action Plan]\nInformation pulled from Open Science at NOAA Fisheries",
     "crumbs": [
       "Open Science"
     ]
