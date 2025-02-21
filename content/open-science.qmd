@@ -8,11 +8,11 @@ Open science is a movement that aims to make scientific research, data, and publ
 
 NOAA Fisheries has an Open Science Initiative with the intent to support scientists, developers, resource managers, and policy analysts in the adoption of modern, open, reproducible scientific workflows that enhance our already groundbreaking scientific work.This vision importantly also enables more timely fulfillment of NOAA’s Open Science mandates:
 
-[NOAA Data Strategy](https://sciencecouncil.noaa.gov/wp-content/uploads/2022/08/2020-Data-Strategy.pdf)
-NOAA Fisheries Data Vision
-[DOC Open Source Code Policy](https://www.commerce.gov/about/policies/source-code)
-[Federal Data Strategy](https://strategy.data.gov/)
-Federal Open Access Memo
+[NOAA Data Strategy](https://sciencecouncil.noaa.gov/wp-content/uploads/2022/08/2020-Data-Strategy.pdf), 
+NOAA Fisheries Data Vision, 
+[DOC Open Source Code Policy](https://www.commerce.gov/about/policies/source-code), 
+[Federal Data Strategy](https://strategy.data.gov/), 
+Federal Open Access Memo, 
 Open Government National Action Plan
 
 Information pulled from [Open Science at NOAA Fisheries](https://www.fisheries.noaa.gov/science-data/open-science-noaa-fisheries)
