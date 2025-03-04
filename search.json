@@ -1,22 +1,52 @@
 [
   {
-    "objectID": "content/project-repos.html",
-    "href": "content/project-repos.html",
-    "title": "CB Genetics Github Repositories",
+    "objectID": "content/acknowledgements.html",
+    "href": "content/acknowledgements.html",
+    "title": "Acknowledgments",
     "section": "",
-    "text": "Project\nDescription\nData Input(s)\nContact Authors\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nTo add your repository to this table, contact xxxx.",
+    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland.",
     "crumbs": [
-      "Project Repositories"
+      "Acknowledgements"
     ]
   },
   {
-    "objectID": "content/project-repos.html#project-repositories",
-    "href": "content/project-repos.html#project-repositories",
-    "title": "CB Genetics Github Repositories",
+    "objectID": "content/data-management.html",
+    "href": "content/data-management.html",
+    "title": "Data Management",
     "section": "",
-    "text": "Project\nDescription\nData Input(s)\nContact Authors\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nTo add your repository to this table, contact xxxx.",
+    "text": "Content forthcoming!",
     "crumbs": [
-      "Project Repositories"
+      "Data Management"
+    ]
+  },
+  {
+    "objectID": "content/open-science.html",
+    "href": "content/open-science.html",
+    "title": "Open Science",
+    "section": "",
+    "text": "Open science is a movement that aims to make scientific research, data, and publications available to everyone. It encourages collaboration, transparency, and productivity.\nNOAA Fisheries has an Open Science Initiative with the intent to support scientists, developers, resource managers, and policy analysts in the adoption of modern, open, reproducible scientific workflows that enhance our already groundbreaking scientific work.This vision importantly also enables more timely fulfillment of NOAA’s Open Science mandates:\nNOAA Data Strategy, NOAA Fisheries Data Vision, DOC Open Source Code Policy, Federal Data Strategy, Federal Open Access Memo, Open Government National Action Plan\nInformation pulled from Open Science at NOAA Fisheries",
+    "crumbs": [
+      "Open Science"
+    ]
+  },
+  {
+    "objectID": "content/open-science.html#what-is-open-science",
+    "href": "content/open-science.html#what-is-open-science",
+    "title": "Open Science",
+    "section": "",
+    "text": "Open science is a movement that aims to make scientific research, data, and publications available to everyone. It encourages collaboration, transparency, and productivity.\nNOAA Fisheries has an Open Science Initiative with the intent to support scientists, developers, resource managers, and policy analysts in the adoption of modern, open, reproducible scientific workflows that enhance our already groundbreaking scientific work.This vision importantly also enables more timely fulfillment of NOAA’s Open Science mandates:\nNOAA Data Strategy, NOAA Fisheries Data Vision, DOC Open Source Code Policy, Federal Data Strategy, Federal Open Access Memo, Open Government National Action Plan\nInformation pulled from Open Science at NOAA Fisheries",
+    "crumbs": [
+      "Open Science"
+    ]
+  },
+  {
+    "objectID": "content/open-science.html#nmfs-open-science-resources",
+    "href": "content/open-science.html#nmfs-open-science-resources",
+    "title": "Open Science",
+    "section": "NMFS Open Science Resources",
+    "text": "NMFS Open Science Resources\nNMFS Open Science public home page\nNMFS Open Science internal home page - Links to NMFS Open Science calendar of events\nNMFS Open Science Resource Book\nNMFS Openscapes is a collaboration between NOAA Fisheries and Openscapes to promote a data-driven culture through the adoption of open science tools and strategies. Openscapes provides team-based training in reproducible scientific workflows, data management, coding, and optimal team collaboration and project management. Keep an eye out for upcoming openscapes champions cohort opportunities on their webpage.",
+    "crumbs": [
+      "Open Science"
     ]
   },
   {
@@ -30,14 +60,35 @@
     ]
   },
   {
-    "objectID": "content/data-management.html",
-    "href": "content/data-management.html",
-    "title": "Data Management",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CB Genetics Landing Page",
     "section": "",
-    "text": "Content forthcoming!",
+    "text": "This page is built and maintained by the Conservation Biology Genetics and Evolution Program at the NOAA NWFSC.\nOn this page you will find links to github repositories for current and past projects of our group. In addition, we have links to Github resources, open science resources, Sedna resources, etc.\nIf you have ideas on pages or resources to add, contact xxx.\n\nNWFSC Molecular Genetics Lab Page\nFor links to the genetics lab databases, protocols, equipment signups, etc. visit the NWFSC Molecular Genetics Lab Page.",
     "crumbs": [
-      "Data Management"
+      "Home"
     ]
+  },
+  {
+    "objectID": "content/rmarkdown.html",
+    "href": "content/rmarkdown.html",
+    "title": "R Markdown",
+    "section": "",
+    "text": "You can include R Markdown files in your project."
+  },
+  {
+    "objectID": "content/rmarkdown.html#r-markdown",
+    "href": "content/rmarkdown.html#r-markdown",
+    "title": "R Markdown",
+    "section": "R Markdown",
+    "text": "R Markdown\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "content/rmarkdown.html#including-plots",
+    "href": "content/rmarkdown.html#including-plots",
+    "title": "R Markdown",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
   },
   {
     "objectID": "content/github-resources.html",
@@ -100,74 +151,23 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "CB Genetics Landing Page",
+    "objectID": "content/project-repos.html",
+    "href": "content/project-repos.html",
+    "title": "CB Genetics Github Repositories",
     "section": "",
-    "text": "This page is built and maintained by the Conservation Biology Genetics and Evolution Program at the NOAA NWFSC.\nOn this page you will find links to github repositories for current and past projects of our group. In addition, we have links to Github resources, open science resources, Sedna resources, etc.\nIf you have ideas on pages or resources to add, contact xxx.\n\nNWFSC Molecular Genetics Lab Page\nFor links to the genetics lab databases, protocols, equipment signups, etc. visit the NWFSC Molecular Genetics Lab Page.",
+    "text": "Project\nDescription\nData Input(s)\nContact Authors\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nTo add your repository to this table, contact xxxx.",
     "crumbs": [
-      "Home"
+      "Project Repositories"
     ]
   },
   {
-    "objectID": "content/rmarkdown.html",
-    "href": "content/rmarkdown.html",
-    "title": "R Markdown",
+    "objectID": "content/project-repos.html#project-repositories",
+    "href": "content/project-repos.html#project-repositories",
+    "title": "CB Genetics Github Repositories",
     "section": "",
-    "text": "You can include R Markdown files in your project."
-  },
-  {
-    "objectID": "content/rmarkdown.html#r-markdown",
-    "href": "content/rmarkdown.html#r-markdown",
-    "title": "R Markdown",
-    "section": "R Markdown",
-    "text": "R Markdown\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
-  },
-  {
-    "objectID": "content/rmarkdown.html#including-plots",
-    "href": "content/rmarkdown.html#including-plots",
-    "title": "R Markdown",
-    "section": "Including Plots",
-    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
-  },
-  {
-    "objectID": "content/acknowledgements.html",
-    "href": "content/acknowledgements.html",
-    "title": "Acknowledgments",
-    "section": "",
-    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland.",
+    "text": "Project\nDescription\nData Input(s)\nContact Authors\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nTo add your repository to this table, contact xxxx.",
     "crumbs": [
-      "Acknowledgements"
-    ]
-  },
-  {
-    "objectID": "content/open-science.html",
-    "href": "content/open-science.html",
-    "title": "Open Science",
-    "section": "",
-    "text": "Open science is a movement that aims to make scientific research, data, and publications available to everyone. It encourages collaboration, transparency, and productivity.\nNOAA Fisheries has an Open Science Initiative with the intent to support scientists, developers, resource managers, and policy analysts in the adoption of modern, open, reproducible scientific workflows that enhance our already groundbreaking scientific work.This vision importantly also enables more timely fulfillment of NOAA’s Open Science mandates:\nNOAA Data Strategy, NOAA Fisheries Data Vision, DOC Open Source Code Policy, Federal Data Strategy, Federal Open Access Memo, Open Government National Action Plan\nInformation pulled from Open Science at NOAA Fisheries",
-    "crumbs": [
-      "Open Science"
-    ]
-  },
-  {
-    "objectID": "content/open-science.html#what-is-open-science",
-    "href": "content/open-science.html#what-is-open-science",
-    "title": "Open Science",
-    "section": "",
-    "text": "Open science is a movement that aims to make scientific research, data, and publications available to everyone. It encourages collaboration, transparency, and productivity.\nNOAA Fisheries has an Open Science Initiative with the intent to support scientists, developers, resource managers, and policy analysts in the adoption of modern, open, reproducible scientific workflows that enhance our already groundbreaking scientific work.This vision importantly also enables more timely fulfillment of NOAA’s Open Science mandates:\nNOAA Data Strategy, NOAA Fisheries Data Vision, DOC Open Source Code Policy, Federal Data Strategy, Federal Open Access Memo, Open Government National Action Plan\nInformation pulled from Open Science at NOAA Fisheries",
-    "crumbs": [
-      "Open Science"
-    ]
-  },
-  {
-    "objectID": "content/open-science.html#nmfs-open-science-resources",
-    "href": "content/open-science.html#nmfs-open-science-resources",
-    "title": "Open Science",
-    "section": "NMFS Open Science Resources",
-    "text": "NMFS Open Science Resources\nNMFS Open Science public home page\nNMFS Open Science internal home page - Links to NMFS Open Science calendar of events\nNMFS Open Science Resource Book\nNMFS Openscapes is a collaboration between NOAA Fisheries and Openscapes to promote a data-driven culture through the adoption of open science tools and strategies. Openscapes provides team-based training in reproducible scientific workflows, data management, coding, and optimal team collaboration and project management. Keep an eye out for upcoming openscapes champions cohort opportunities on their webpage.",
-    "crumbs": [
-      "Open Science"
+      "Project Repositories"
     ]
   }
 ]
