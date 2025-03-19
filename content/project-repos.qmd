@@ -6,7 +6,7 @@ title: CB Genetics Github Repositories
 
 | Project | Description | Data Input(s) | Contact Authors |
 |------|-------------|------|------|
-| 12      | 12   |    12 |   12   |
+| Vermilion Sunset Rockfish | The primary objective was to conduct a genomic analysis to distinguish the vermilion rockfish stock along the west coast from sunset rockfish using tissue samples previously collected during fishery-independent resource surveys. Specifically, we (1) used high-throughput sequencing technologies to identify single nucleotide polymorphisms (SNPs) which produced an assay that definitively separates the two species, (2) applied this SNP panel to over 27 thousand samples and finally (3) identified species-specific demographic and biological differences. | GT-seq | Anita Wray (anita.wray@noaa.gov) |
 | 123     | 123  |   123 |  123   |
 | 1       | 1    |     1 |   1    |
 
