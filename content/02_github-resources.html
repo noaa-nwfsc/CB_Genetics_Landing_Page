@@ -147,8 +147,11 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
           <li class="sidebar-item">
- <span class="menu-text">content/02c_use-github-desktop</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../content/02c_use-github-desktop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to: Use Github Desktop</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/02d_general-resources-glossary.html" class="sidebar-item-text sidebar-link">
@@ -191,11 +194,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-github" id="toc-why-github" class="nav-link active" data-scroll-target="#why-github">Why Github?</a></li>
-  <li><a href="#github-trainings-and-videos" id="toc-github-trainings-and-videos" class="nav-link" data-scroll-target="#github-trainings-and-videos">Github Trainings and Videos</a></li>
+  <li><a href="#cb-genetics-working-best-practices" id="toc-cb-genetics-working-best-practices" class="nav-link active" data-scroll-target="#cb-genetics-working-best-practices">CB Genetics Working Best Practices</a></li>
+  <li><a href="#cb-genetics-github-repository-guidelines" id="toc-cb-genetics-github-repository-guidelines" class="nav-link" data-scroll-target="#cb-genetics-github-repository-guidelines">CB Genetics Github Repository Guidelines</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   <li><a href="#noaa-github-repository-guidelines" id="toc-noaa-github-repository-guidelines" class="nav-link" data-scroll-target="#noaa-github-repository-guidelines">NOAA Github Repository Guidelines</a></li>
-  <li><a href="#required-github-repository-components" id="toc-required-github-repository-components" class="nav-link" data-scroll-target="#required-github-repository-components">Required Github Repository Components</a></li>
-  <li><a href="#github-basics-glossary" id="toc-github-basics-glossary" class="nav-link" data-scroll-target="#github-basics-glossary">Github Basics Glossary</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/02_github-resources.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/02_github-resources.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -221,31 +223,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="why-github" class="level2">
-<h2 class="anchored" data-anchor-id="why-github">Why Github?</h2>
-<p>Not sure why we use github? Check out this <a href="https://openscapes.org/blog/2022-05-27-github-illustrated-series/">illustrated blog post</a> explianing how github is used for supporting, reusing, contributing, and failing.</p>
-</section>
-<section id="github-trainings-and-videos" class="level2">
-<h2 class="anchored" data-anchor-id="github-trainings-and-videos">Github Trainings and Videos</h2>
-<p>The NOAA Fisheries GitHub Governance Team has an excellent suite of videos on git skills. Check out those videos <a href="https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/training">here</a>.</p>
-<p>Github skills for self-guided learning found <a href="https://skills.github.com/">here</a>.</p>
-<p>Guidance and best practices for NMFS github users provided by NMFS Open Science can be found <a href="https://nmfs-opensci.github.io/GitHub-Guide/">here</a>.</p>
-<p>The <a href="https://noaa-omics-technical-portal.readthedocs.io/en/latest/index.html">NOAA Omics Technical Portal</a> has a suite of resources specific to ’Omics data, including example analyses!</p>
-<p>The <a href="https://github.com/orgs/NOAA-Omics/discussions/2">NOAA Omics Discussion Forum</a> may also be a good place to ask and answer questions regarding ’Omics analyses.</p>
-</section>
-<section id="noaa-github-repository-guidelines" class="level2">
-<h2 class="anchored" data-anchor-id="noaa-github-repository-guidelines">NOAA Github Repository Guidelines</h2>
-<p>From the <a href="https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines">NMFS Github Guide</a>, all repositories, regardless of purpose, must follow these general guidelines:</p>
+<section id="cb-genetics-working-best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="cb-genetics-working-best-practices">CB Genetics Working Best Practices</h2>
+<p>Best practices for working on analyses in github:&nbsp;</p>
 <ul>
-<li>PII and BII should never be shared (on purpose or inadvertently) on GitHub regardless of whether the repository is in a private or public repository.</li>
-<li>No sensitive information should be shared in repositories, including (but is not limited to) usernames, passwords, login information, port numbers, IP addresses, server names, Application Programming Interface (API) keys, Personally Identifiable Information (PII), Business Identifiable Information (BII), or confidential data.</li>
-<li>GitHub is not a back-up service nor is it a data repository with archiving. Other tools are designed for this purpose.</li>
-<li>Only scientific content that can be reasonably classified as FISMA Low should be shared on GitHub.</li>
-<li>Repositories that have code that interacts with APIs using IP addresses, usernames, passwords, secrets, or credentials must take steps to prevent committing of “secrets” to GitHub.</li>
+<li><p>All repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account.</p></li>
+<li><p>Work and commit in the main branch of a repo (see species cases for branching and forking below)</p></li>
+<li><p><strong>Commits</strong></p>
+<ul>
+<li><p>Perform commits daily at minimum when working on analysis</p></li>
+<li><p>If working in a branch, commit daily to the branch, and determine how often to merge to main</p></li>
+</ul></li>
+<li><p><strong>Forking</strong></p>
+<ul>
+<li><p>Generally do not use!</p></li>
+<li><p>Forking may be useful if contributors to the repository are outside of enterprise, but you must create and uphold good team standards on how often forks are merged back into the main repository.</p></li>
+</ul></li>
+<li><p><strong>Branching</strong></p>
+<ul>
+<li><p>Use sparingly!</p></li>
+<li><p>Create a branch for a specific task, complete task, merge to main immediately.&nbsp;</p>
+<ul>
+<li><p>Use when you are making a change that could “break” the main repo for some reason</p></li>
+<li><p>Branches are easy to “get lost in” and can create confusion and complicate organization of your repo</p></li>
+</ul></li>
+</ul></li>
+<li><p>Projects can be created within our CB-genetics team. Use them to organize tasks or discussions associated with one or multiple repositories.</p></li>
 </ul>
 </section>
-<section id="required-github-repository-components" class="level2">
-<h2 class="anchored" data-anchor-id="required-github-repository-components">Required Github Repository Components</h2>
+<section id="cb-genetics-github-repository-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="cb-genetics-github-repository-guidelines">CB Genetics Github Repository Guidelines</h2>
+<p>See the How to: Create a github repository in enterprise tab for a full tutorial walk through of creating a github repository.</p>
+<p>Edit here- what to include in repos</p>
+<p>Assign to team CB-Genetics (can choose permissions)</p>
+<p>Add topic for organization</p>
 <p>From the <a href="https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines">NMFS Github Guide</a>, your repository should include a README, the government product DISCLAIMER, and LICENSE file. If the work is something that can be cited, then also include citation information and a DOI.</p>
 <section id="readme" class="level4">
 <h4 class="anchored" data-anchor-id="readme">README</h4>
@@ -289,63 +300,19 @@ License
 </div>
 </section>
 </section>
-<section id="github-basics-glossary" class="level2">
-<h2 class="anchored" data-anchor-id="github-basics-glossary">Github Basics Glossary</h2>
-<p>A full list of terms can be found <a href="https://docs.github.com/en/get-started/learning-about-github/github-glossary">here</a>, but below are some common terms to get acquainted with.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 3%">
-<col style="width: 96%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>branch</strong></td>
-<td>A branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or main branch allowing you to work freely without disrupting the “live” version. When you’ve made the changes you want to make, you can merge your branch back into the main branch to publish your changes.</td>
-</tr>
-<tr class="even">
-<td><strong>clone</strong></td>
-<td>A clone is a copy of a repository that lives on your computer instead of on a website’s server somewhere, or the act of making that copy. When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. The repository you cloned is still connected to the remote version so that you can push your local changes to the remote to keep them synced when you’re online.</td>
-</tr>
-<tr class="odd">
-<td><strong>commit</strong></td>
-<td>A commit, or “revision”, is an individual change to a file (or set of files). When you make a commit to save your work, Git creates a unique ID (a.k.a. the “SHA” or “hash”) that allows you to keep record of the specific changes committed along with who made them and when. Commits usually contain a commit message which is a brief description of what changes were made.</td>
-</tr>
-<tr class="even">
-<td><strong>directory</strong></td>
-<td>A folder containing one or more files or folders. You can create directories to organize the contents of a repository.</td>
-</tr>
-<tr class="odd">
-<td><strong>fork</strong></td>
-<td>A fork is a personal copy of another user’s repository that lives on your account. Forks allow you to freely make changes to a project without affecting the original upstream repository. You can also open a pull request in the upstream repository and keep your fork synced with the latest changes since both repositories are still connected.</td>
-</tr>
-<tr class="even">
-<td><strong>pull</strong></td>
-<td>Pull refers to when you are fetching in changes and merging them. For instance, if someone has edited the remote file you’re both working on, you’ll want to pull in those changes to your local copy so that it’s up to date.</td>
-</tr>
-<tr class="odd">
-<td><strong>pull request</strong></td>
-<td>Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository’s collaborators. Like issues, pull requests each have their own discussion forum.</td>
-</tr>
-<tr class="even">
-<td><strong>push</strong></td>
-<td>To push means to send your committed changes to a remote repository on GitHub.com. For instance, if you change something locally, you can push those changes so that others may access them.</td>
-</tr>
-<tr class="odd">
-<td><strong>repository</strong></td>
-<td>A repository is the most basic element of GitHub. They’re easiest to imagine as a project’s folder. A repository contains all of the project files (including documentation), and stores each file’s revision history. Repositories can have multiple collaborators and can be either public or private.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+</section>
+<section id="noaa-github-repository-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="noaa-github-repository-guidelines">NOAA Github Repository Guidelines</h2>
+<p>From the <a href="https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines">NMFS Github Guide</a>, all repositories, regardless of purpose, must follow these general guidelines:</p>
+<ul>
+<li>PII and BII should never be shared (on purpose or inadvertently) on GitHub regardless of whether the repository is in a private or public repository.</li>
+<li>No sensitive information should be shared in repositories, including (but is not limited to) usernames, passwords, login information, port numbers, IP addresses, server names, Application Programming Interface (API) keys, Personally Identifiable Information (PII), Business Identifiable Information (BII), or confidential data.</li>
+<li>GitHub is not a back-up service nor is it a data repository with archiving. Other tools are designed for this purpose.</li>
+<li>Only scientific content that can be reasonably classified as FISMA Low should be shared on GitHub.</li>
+<li>Repositories that have code that interacts with APIs using IP addresses, usernames, passwords, secrets, or credentials must take steps to prevent committing of “secrets” to GitHub.</li>
+</ul>
 
 
 </section>
