@@ -14,7 +14,7 @@ Best practices for working on analyses in github: 
 
     -   Perform commits daily at minimum when working on analysis
 
-    -   Make sure to push
+    -   Make sure to push to origin daily as well!
 
     -   If working in a branch, commit daily to the branch, and determine how often to merge to main
 
