@@ -1,3 +1,23 @@
 ---
 title: "How to: Create a github repository in enterprise"
 ---
+
+Step by step tutorial coming!
+
+Little section at end:
+
+Create a new repository based on someone else's:
+
+-   Go to github file and download and work with it
+
+-   Importing when you want the whole repo, but want to make it your own
+
+    -   No connections to parent repo
+
+    -   Little button somewhere that may be hard to find in github
+
+    -   How to: import a repository 
+
+    -   Caveats- this pulls over EVERYTHING
+
+    -   It may be more useful/easier to just download the file with the code you want to replicate and create a new repository on your own
