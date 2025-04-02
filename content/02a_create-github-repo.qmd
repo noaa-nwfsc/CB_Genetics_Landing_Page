@@ -1,5 +1,3 @@
 ---
-title: "Untitled"
-format: html
-editor: visual
+title: "How to: Create a github repository in enterprise"
 ---
