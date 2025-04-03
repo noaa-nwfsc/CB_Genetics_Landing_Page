@@ -6,9 +6,9 @@ title: Github Resources
 
 Best practices for working on analyses in github: 
 
--   All repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account.
+-   **All repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account.**
 
--   Work and commit in the main branch of a repo (see species cases for branching and forking below)
+-   **Work and commit in the main branch of a repo** (see special cases for branching and forking below)
 
 -   **Commits**
 
@@ -34,23 +34,21 @@ Best practices for working on analyses in github: 
 
         -   Branches are easy to “get lost in” and can create confusion and complicate organization of your repo
 
--   Projects can be created within our CB-genetics team. Use them to organize tasks or discussions associated with one or multiple repositories.
+-   **Projects** can be created within our CB-genetics team. Use them to organize tasks or discussions associated with one or multiple repositories.
 
 ## CB Genetics Github Repository Guidelines
 
 See the How to: Create a github repository in enterprise tab for a full tutorial walk through of creating a github repository.
 
-Edit here- what to include in repos
-
-Assign to team CB-Genetics (can choose permissions)
-
-Add topic for organization
-
-From the [NMFS Github Guide](https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines), your repository should include a README, the government product DISCLAIMER, and LICENSE file. If the work is something that can be cited, then also include citation information and a DOI.
+From the [NMFS Github Guide](https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines), your repository should include a README, the government product DISCLAIMER, and LICENSE file. If the work is something that can be cited, then also include citation information and a DOI. In addition, all CB Genetics github repositories should include the following components:
 
 #### README
 
 This file should provide a description of the repository. The contents of the README file will vary greatly depending on the application, but there are a few common elements for NOAA Fisheries work products: title, description, developer information, disclaimer, NOAA Fisheries logo, and DOC footer.
+
+README guidelines:
+
+xxx
 
 #### DISCLAIMER.md
 
@@ -70,6 +68,8 @@ You should add an open license file to the GitHub repository before work begins.
 
 To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select CC0 1.0 Universal.
 
+Apache 2.0?
+
 You can also add license information to the bottom of your README.
 
 ::: {.callout-note icon="false"}
@@ -78,7 +78,21 @@ You can also add license information to the bottom of your README.
 This content was created by U.S. Government employees as part of their official duties. This content is not subject to copyright in the United States (17 U.S.C. §105) and is in the public domain within the United States of America. Additionally, copyright is waived worldwide through the CC0 1.0 Universal public domain dedication.
 :::
 
-## 
+#### Assign CB-Genetics Team
+
+Assigning the CB-Genetics team to your repository keeps our group's work organized and easy to find within the NWFSC enterprise organization. Simply navigate to the NWFSC enterprise organization, click on the Teams tab, expand the CB team to find the CB-Genetics team within it, then click on Repositories.
+
+![Repositories in the CB-Genetics Team](CB-Genetics Team Repositories.png){alt="Repositories in the CB-Genetics Team" fig-align="center"}
+
+*To do this: Settings -\>Manage access -\> Add teams -\> CB-Genetics (You choose permissions when establishing this access.)*
+
+#### Assign the nwfsc-cb-genetics Topic to Your Repository
+
+xxxx
+
+#### Gitignore
+
+xxxx
 
 ## NOAA Github Repository Guidelines
 
