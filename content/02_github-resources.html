@@ -196,7 +196,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#cb-genetics-working-best-practices" id="toc-cb-genetics-working-best-practices" class="nav-link active" data-scroll-target="#cb-genetics-working-best-practices">CB Genetics Working Best Practices</a></li>
   <li><a href="#cb-genetics-github-repository-guidelines" id="toc-cb-genetics-github-repository-guidelines" class="nav-link" data-scroll-target="#cb-genetics-github-repository-guidelines">CB Genetics Github Repository Guidelines</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   <li><a href="#noaa-github-repository-guidelines" id="toc-noaa-github-repository-guidelines" class="nav-link" data-scroll-target="#noaa-github-repository-guidelines">NOAA Github Repository Guidelines</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/02_github-resources.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/02_github-resources.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -227,8 +226,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="cb-genetics-working-best-practices">CB Genetics Working Best Practices</h2>
 <p>Best practices for working on analyses in github:&nbsp;</p>
 <ul>
-<li><p>All repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account.</p></li>
-<li><p>Work and commit in the main branch of a repo (see species cases for branching and forking below)</p></li>
+<li><p><strong>All repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account.</strong></p></li>
+<li><p><strong>Work and commit in the main branch of a repo</strong> (see special cases for branching and forking below)</p></li>
 <li><p><strong>Commits</strong></p>
 <ul>
 <li><p>Perform commits daily at minimum when working on analysis</p></li>
@@ -249,19 +248,18 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Branches are easy to “get lost in” and can create confusion and complicate organization of your repo</p></li>
 </ul></li>
 </ul></li>
-<li><p>Projects can be created within our CB-genetics team. Use them to organize tasks or discussions associated with one or multiple repositories.</p></li>
+<li><p><strong>Projects</strong> can be created within our CB-genetics team. Use them to organize tasks or discussions associated with one or multiple repositories.</p></li>
 </ul>
 </section>
 <section id="cb-genetics-github-repository-guidelines" class="level2">
 <h2 class="anchored" data-anchor-id="cb-genetics-github-repository-guidelines">CB Genetics Github Repository Guidelines</h2>
 <p>See the How to: Create a github repository in enterprise tab for a full tutorial walk through of creating a github repository.</p>
-<p>Edit here- what to include in repos</p>
-<p>Assign to team CB-Genetics (can choose permissions)</p>
-<p>Add topic for organization</p>
-<p>From the <a href="https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines">NMFS Github Guide</a>, your repository should include a README, the government product DISCLAIMER, and LICENSE file. If the work is something that can be cited, then also include citation information and a DOI.</p>
+<p>From the <a href="https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines">NMFS Github Guide</a>, your repository should include a README, the government product DISCLAIMER, and LICENSE file. If the work is something that can be cited, then also include citation information and a DOI. In addition, all CB Genetics github repositories should include the following components:</p>
 <section id="readme" class="level4">
 <h4 class="anchored" data-anchor-id="readme">README</h4>
 <p>This file should provide a description of the repository. The contents of the README file will vary greatly depending on the application, but there are a few common elements for NOAA Fisheries work products: title, description, developer information, disclaimer, NOAA Fisheries logo, and DOC footer.</p>
+<p>README guidelines:</p>
+<p>xxx</p>
 </section>
 <section id="disclaimer.md" class="level4">
 <h4 class="anchored" data-anchor-id="disclaimer.md">DISCLAIMER.md</h4>
@@ -285,6 +283,7 @@ DISCLAIMER.md
 <h4 class="anchored" data-anchor-id="license-files">LICENSE Files</h4>
 <p>You should add an open license file to the GitHub repository before work begins. This establishes from the moment work starts that all work is open source (as required for publicly released federally funded work).</p>
 <p>To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select CC0 1.0 Universal.</p>
+<p>Apache 2.0?</p>
 <p>You can also add license information to the bottom of your README.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -300,9 +299,25 @@ License
 </div>
 </div>
 </section>
+<section id="assign-cb-genetics-team" class="level4">
+<h4 class="anchored" data-anchor-id="assign-cb-genetics-team">Assign CB-Genetics Team</h4>
+<p>Assigning the CB-Genetics team to your repository keeps our group’s work organized and easy to find within the NWFSC enterprise organization. Simply navigate to the NWFSC enterprise organization, click on the Teams tab, expand the CB team to find the CB-Genetics team within it, then click on Repositories.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="CB-Genetics Team Repositories.png" class="img-fluid figure-img"></p>
+<figcaption>Repositories in the CB-Genetics Team</figcaption>
+</figure>
+</div>
+<p><em>To do this: Settings -&gt;Manage access -&gt; Add teams -&gt; CB-Genetics (You choose permissions when establishing this access.)</em></p>
 </section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<section id="assign-the-nwfsc-cb-genetics-topic-to-your-repository" class="level4">
+<h4 class="anchored" data-anchor-id="assign-the-nwfsc-cb-genetics-topic-to-your-repository">Assign the nwfsc-cb-genetics Topic to Your Repository</h4>
+<p>xxxx</p>
+</section>
+<section id="gitignore" class="level4">
+<h4 class="anchored" data-anchor-id="gitignore">Gitignore</h4>
+<p>xxxx</p>
+</section>
 </section>
 <section id="noaa-github-repository-guidelines" class="level2">
 <h2 class="anchored" data-anchor-id="noaa-github-repository-guidelines">NOAA Github Repository Guidelines</h2>
