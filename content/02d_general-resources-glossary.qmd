@@ -18,12 +18,22 @@ The [NOAA Omics Technical Portal](https://noaa-omics-technical-portal.readthedoc
 
 The [NOAA Omics Discussion Forum](https://github.com/orgs/NOAA-Omics/discussions/2) may also be a good place to ask and answer questions regarding 'Omics analyses.
 
+## Markdown Basics
+
+README files are all markdown files. If you are new to using markdown, check out this [cheat sheet](https://www.markdownguide.org/basic-syntax/).
+
+You can also open and edit markdown documents in R Studio. There is an option in the top corner to change the view form "Source" to "Visual" to view and edit the markdown code as it will be published.
+
+![Markdown file in R Studio with "Source" view.](Markdown-source.png){fig-align="center"}
+
+![Markdown file in R Studio with "Visual" view.](Markdown-visual.png){fig-align="center"}
+
 ## Github Basics Glossary
 
 A full list of terms can be found [here](https://docs.github.com/en/get-started/learning-about-github/github-glossary), but below are some common terms to get acquainted with.
 
 | Term             | Definition                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|---------------|---------------------------------------------------------|
+|-----------------|-------------------------------------------------------|
 | **branch**       | A branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or main branch allowing you to work freely without disrupting the "live" version. When you've made the changes you want to make, you can merge your branch back into the main branch to publish your changes.                                                                                                                     |
 | **clone**        | A clone is a copy of a repository that lives on your computer instead of on a website's server somewhere, or the act of making that copy. When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. The repository you cloned is still connected to the remote version so that you can push your local changes to the remote to keep them synced when you're online. |
 | **commit**       | A commit, or "revision", is an individual change to a file (or set of files). When you make a commit to save your work, Git creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to keep record of the specific changes committed along with who made them and when. Commits usually contain a commit message which is a brief description of what changes were made.                                                                        |
