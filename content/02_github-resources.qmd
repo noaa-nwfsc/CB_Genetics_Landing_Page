@@ -38,7 +38,7 @@ Best practices for working on analyses in github: 
 
 ## CB Genetics Github Repository Guidelines
 
-See the How to: Create a github repository in enterprise tab for a full tutorial walk through of creating a github repository.
+See [How to: Create a github repository in enterprise](https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html) for a full tutorial walk through of creating a github repository.
 
 From the [NMFS Github Guide](https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines), your repository should include a README, the government product DISCLAIMER, and LICENSE file. In addition, all CB Genetics github repositories should include the following components:
 
@@ -70,7 +70,7 @@ This repository is a scientific product and is not official communication of the
 
 You should add an open license file to the GitHub repository before work begins. This establishes from the moment work starts that all work is open source (as required for publicly released federally funded work).
 
-To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select \
+To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select\
 **Apache-2.0 license**.
 
 #### Assign CB-Genetics Team
@@ -89,7 +89,7 @@ Topics are used in Github like hashtags are used in social media. It is another 
 
 The "nwfsc-cb-genetics" topic should be added to all repositories in our group.
 
-![](nwfsc-cb-genetics topic results.png)
+![](nwfsc-cb-genetics%20topic%20results.png)
 
 *To do this: navigate to the main page of the repository -\> in the top right corner, to the right of "About", clikc the gear symbol -\> under "Topics" start to type nwfsc-cb-genetics, click the matching topic from the dropdown menu -\> click "Save changes"*
 
