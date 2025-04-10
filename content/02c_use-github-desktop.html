@@ -189,8 +189,16 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#clone-repositories-to-github-desktop" id="toc-clone-repositories-to-github-desktop" class="nav-link active" data-scroll-target="#clone-repositories-to-github-desktop">Clone Repositories to Github Desktop</a></li>
+  <li><a href="#working-on-analyses-with-github" id="toc-working-on-analyses-with-github" class="nav-link" data-scroll-target="#working-on-analyses-with-github">Working on Analyses with Github</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/02c_use-github-desktop.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/02c_use-github-desktop.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -214,8 +222,87 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Github desktop is one of the easiest ways to work with your analysis in Github in real time. This page will give you a quick guided tutorial on working with github desktop.</p>
+<p>Make sure you are signed in to Github Desktop before starting.</p>
+<p><em>Key terms used on this page can be found at the bottom.</em></p>
+<section id="clone-repositories-to-github-desktop" class="level2">
+<h2 class="anchored" data-anchor-id="clone-repositories-to-github-desktop">Clone Repositories to Github Desktop</h2>
+<p>To work on a repository on your local machine, you need to clone it to Github desktop.</p>
+<ol type="1">
+<li>In the <strong>File</strong> menu, click <strong>Clone Repository</strong></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to desktop- file.webp" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ol type="1">
+<li>On the open window, use either the <strong>Github.com</strong> tab or the <strong>URL</strong> tab to find the repository you want to clone.
+<ul>
+<li>On the <strong>Github.com</strong> tab, start typing the repository name or search the dropdown menu for repositories in your personal account or the nwfsc enterprise organization.</li>
+<li>On the <strong>URL</strong> tab, paste the URL of the github browser repository you want to clone.</li>
+<li><em>Do not use the GitHub Enterprise tab</em></li>
+</ul></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to desktop- clone.webp" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ol type="1">
+<li>Select the local directory into which you want to clone the repository. Next to “Local Path”, click <strong>Choose</strong> and navigate to the directory/folder where you want the github repository to live on your local machine.
+<ul>
+<li>This process will create a new folder in the directory you choose and call it your repository name. Location of the repository is up to you.!
+<ul>
+<li>The default directory will be in your Documents/Github folder on your computer and it will create a new folder called the name of the repository</li>
+<li>You may choose to locate your repository folder somewhere in the project folder for which you are working</li>
+</ul></li>
+<li>You may drag and drop the repository folder to another location after you initially clone it, but do not just move the files within the repo folder (there are hidden files that must go with it). Upon next working session, Github desktop will ask you to identify where you have moved the folder.</li>
+</ul></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to desktop- choose directory.webp" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ol type="1">
+<li>At the bottom of the “Clone Repository” window, click <strong>Clone</strong>.</li>
+</ol>
+<p>Repositories you have cloned to your local computer are shown in the drop down menu at the top left of your github desktop window. Toggle between them to work in different repositories.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to desktop- toggle.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p><em>If you are starting from scratch and making a new repository, follow the instructions <a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html">How to: Create a github repository in enterprise</a>, you will already have a cloned version on your desktop.</em></p>
+</section>
+<section id="working-on-analyses-with-github" class="level2">
+<h2 class="anchored" data-anchor-id="working-on-analyses-with-github">Working on Analyses with Github</h2>
+<p>Open github desktop on your local computer.</p>
+<p>Toggle to the repo you want to work on</p>
+<p>Check to see if you need to fetch origin (changes you or someone else made to the repository that aren’t reflected on your local machine)- you want to work with the most up to date version of the repo always to avoid conflicts!</p>
+<p>Click “Show files in Explorer” (maybe slightly different for mac) or navigate to the folder on your local machine linked to the github repo</p>
+<p>Open code in R studio or whatever program etc (all markdown files can be edited in R)</p>
+<p>Work!</p>
+<p>Save your file</p>
+<p>Go back to github desktop- it will show there is a change to commit</p>
+<p>Type a commit message (stating what work you did) and hit commit to main</p>
+<p>Frequency of commits are up to you, at least once a day</p>
+<p>After you make a commit, there will be a xxxxxx and it will say push to origin</p>
+<p>Always push to origin (pushes the changes you made to github so they are not just stored on your local machine, ie this backs things up for you!) at least at the end of your work session, once per day at minimum</p>
+</section>
+<section id="key-terms" class="level2">
+<h2 class="anchored" data-anchor-id="key-terms">Key Terms</h2>
+<p>clone- a copy of a repository that lives on your computer instead of a website’s server (cloning is the act of making that copy). When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. THe repo you cloned is still connected to teh remote version so that you can push your local changes to the remove to keep them synced when youre online.</p>
+<p>commit- an individual change to a file, when you make a commit to save your work, Git creates a unique ID that allows you to keep record of the specifci changes committed along with who make them and when.</p>
+<p>pull- fetching changes- pull those changes to your local copy so it is up to date</p>
+<p>push- send your committed changes to a remote repository on github.com</p>
+<p>Remote repo- the repo on github.com</p>
+<p>local- your laptop/computer</p>
+<p>github desktop- program installed on your computer</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -799,7 +886,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/02c_use-github-desktop.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/02c_use-github-desktop.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/02c_use-github-desktop.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/02c_use-github-desktop.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
