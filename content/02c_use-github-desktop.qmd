@@ -1,3 +1,82 @@
 ---
 title: "How to: Use Github Desktop"
 ---
+
+Github desktop is one of the easiest ways to work with your analysis in Github in real time. This page will give you a quick guided tutorial on working with github desktop.
+
+Make sure you are signed in to Github Desktop before starting.
+
+*Key terms used on this page can be found at the bottom.*
+
+## Clone Repositories to Github Desktop
+
+To work on a repository on your local machine, you need to clone it to Github desktop.
+
+1.  In the **File** menu, click **Clone Repository**
+
+![](how to desktop- file.webp){fig-align="center"}
+
+1.  On the open window, use either the **Github.com** tab or the **URL** tab to find the repository you want to clone.
+    -   On the **Github.com** tab, start typing the repository name or search the dropdown menu for repositories in your personal account or the nwfsc enterprise organization.
+    -   On the **URL** tab, paste the URL of the github browser repository you want to clone.
+    -   *Do not use the GitHub Enterprise tab*
+
+![](how to desktop- clone.webp){fig-align="center"}
+
+1.  Select the local directory into which you want to clone the repository. Next to "Local Path", click **Choose** and navigate to the directory/folder where you want the github repository to live on your local machine.
+    -   This process will create a new folder in the directory you choose and call it your repository name. Location of the repository is up to you.!
+        -   The default directory will be in your Documents/Github folder on your computer and it will create a new folder called the name of the repository
+        -   You may choose to locate your repository folder somewhere in the project folder for which you are working
+    -   You may drag and drop the repository folder to another location after you initially clone it, but do not just move the files within the repo folder (there are hidden files that must go with it). Upon next working session, Github desktop will ask you to identify where you have moved the folder.
+
+![](how to desktop- choose directory.webp){fig-align="center"}
+
+1.  At the bottom of the "Clone Repository" window, click **Clone**.
+
+Repositories you have cloned to your local computer are shown in the drop down menu at the top left of your github desktop window. Toggle between them to work in different repositories.
+
+![](how to desktop- toggle.png){fig-align="center"}
+
+*If you are starting from scratch and making a new repository, follow the instructions [How to: Create a github repository in enterprise](https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html), you will already have a cloned version on your desktop.*
+
+## Working on Analyses with Github
+
+Open github desktop on your local computer.
+
+Toggle to the repo you want to work on
+
+Check to see if you need to fetch origin (changes you or someone else made to the repository that aren't reflected on your local machine)- you want to work with the most up to date version of the repo always to avoid conflicts!
+
+Click "Show files in Explorer" (maybe slightly different for mac) or navigate to the folder on your local machine linked to the github repo
+
+Open code in R studio or whatever program etc (all markdown files can be edited in R)
+
+Work!
+
+Save your file
+
+Go back to github desktop- it will show there is a change to commit
+
+Type a commit message (stating what work you did) and hit commit to main
+
+Frequency of commits are up to you, at least once a day
+
+After you make a commit, there will be a xxxxxx and it will say push to origin
+
+Always push to origin (pushes the changes you made to github so they are not just stored on your local machine, ie this backs things up for you!) at least at the end of your work session, once per day at minimum
+
+## Key Terms
+
+clone- a copy of a repository that lives on your computer instead of a website's server (cloning is the act of making that copy). When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. THe repo you cloned is still connected to teh remote version so that you can push your local changes to the remove to keep them synced when youre online.
+
+commit- an individual change to a file, when you make a commit to save your work, Git creates a unique ID that allows you to keep record of the specifci changes committed along with who make them and when.
+
+pull- fetching changes- pull those changes to your local copy so it is up to date
+
+push- send your committed changes to a remote repository on github.com
+
+Remote repo- the repo on github.com
+
+local- your laptop/computer
+
+github desktop- program installed on your computer
