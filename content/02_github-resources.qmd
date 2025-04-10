@@ -70,14 +70,13 @@ This repository is a scientific product and is not official communication of the
 
 You should add an open license file to the GitHub repository before work begins. This establishes from the moment work starts that all work is open source (as required for publicly released federally funded work).
 
-To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select\
-**Apache-2.0 license**.
+To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select **Apache-2.0 license**.
 
 #### Assign CB-Genetics Team
 
 Assigning the CB-Genetics team to your repository keeps our group's work organized and easy to find within the NWFSC enterprise organization. Simply navigate to the NWFSC enterprise organization, click on the Teams tab, expand the CB team to find the CB-Genetics team within it, then click on Repositories.
 
-![Repositories in the CB-Genetics Team](CB-Genetics%20Team%20Repositories.png){fig-align="center"}
+![Repositories in the CB-Genetics Team](CB-Genetics%20Team%20Repositories.png){fig-align="center" width="1200"}
 
 *To do this: Settings -\>Manage access -\> Add teams -\> CB-Genetics (You choose permissions when establishing this access.)*
 
@@ -89,7 +88,7 @@ Topics are used in Github like hashtags are used in social media. It is another 
 
 The "nwfsc-cb-genetics" topic should be added to all repositories in our group.
 
-![](nwfsc-cb-genetics%20topic%20results.png)
+![](nwfsc-cb-genetics%20topic%20results.png){width="700"}
 
 *To do this: navigate to the main page of the repository -\> in the top right corner, to the right of "About", clikc the gear symbol -\> under "Topics" start to type nwfsc-cb-genetics, click the matching topic from the dropdown menu -\> click "Save changes"*
 
