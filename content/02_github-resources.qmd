@@ -40,59 +40,64 @@ Best practices for working on analyses in github: 
 
 See the How to: Create a github repository in enterprise tab for a full tutorial walk through of creating a github repository.
 
-From the [NMFS Github Guide](https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines), your repository should include a README, the government product DISCLAIMER, and LICENSE file. If the work is something that can be cited, then also include citation information and a DOI. In addition, all CB Genetics github repositories should include the following components:
+From the [NMFS Github Guide](https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines), your repository should include a README, the government product DISCLAIMER, and LICENSE file. In addition, all CB Genetics github repositories should include the following components:
 
 #### README
 
-This file should provide a description of the repository. The contents of the README file will vary greatly depending on the application, but there are a few common elements for NOAA Fisheries work products: title, description, developer information, disclaimer, NOAA Fisheries logo, and DOC footer.
+The README file should provide a detailed description of the repository. The contents of the README will vary depending on the project type and degree of completeness, but should include a few common elements.
 
-README guidelines:
+Recommended README components:
 
-xxx
+-   **Primary contacts**: Include name and email of at least one primary contact
 
-#### DISCLAIMER.md
+-   **Citation/Reference/DOI**: If the work is something that can be cited, then also include citation information and a DOI. This will be more common in repositories containing finished projects.
 
-Repositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the disclaimer text as a footnote within the repository’s README.md and any web content available from that repository. Be careful not to use NOAA logos and and NOAA Fisheries branding in a way that could imply official communication. NOAA logos should be used to indicate your affiliation and acknowledge support and funding.
+-   **Objective**: Briefly describe the objective of the project/analysis to provide context for your repository.
 
-The following DISCLAIMER.md file is put in the root of the repository.
+-   **Methods**: Include relevant information regarding the methods used in the analysis for this project repository. This can be broken up in sections if needed for a larger repository that houses multiple analyses.
+
+-   **Major Results**: For projects in mostly finished states, add major takeaways from your analysis. Including figures is optional.
+
+-   **Disclaimer**: Repositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the disclaimer text as a footnote within the repository’s README.md.
 
 ::: {.callout-note icon="false"}
-## DISCLAIMER.md
+### DISCLAIMER
 
 This repository is a scientific product and is not official communication of the National Oceanic and Atmospheric Administration, or the United States Department of Commerce. All NOAA GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. Any claims against the Department of Commerce or Department of Commerce bureaus stemming from the use of this GitHub project will be governed by all applicable Federal law. Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.
 :::
 
-#### LICENSE Files
+#### LICENSE File
 
 You should add an open license file to the GitHub repository before work begins. This establishes from the moment work starts that all work is open source (as required for publicly released federally funded work).
 
-To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select CC0 1.0 Universal.
-
-Apache 2.0?
-
-You can also add license information to the bottom of your README.
-
-::: {.callout-note icon="false"}
-## License
-
-This content was created by U.S. Government employees as part of their official duties. This content is not subject to copyright in the United States (17 U.S.C. §105) and is in the public domain within the United States of America. Additionally, copyright is waived worldwide through the CC0 1.0 Universal public domain dedication.
-:::
+To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select \
+**Apache-2.0 license**.
 
 #### Assign CB-Genetics Team
 
 Assigning the CB-Genetics team to your repository keeps our group's work organized and easy to find within the NWFSC enterprise organization. Simply navigate to the NWFSC enterprise organization, click on the Teams tab, expand the CB team to find the CB-Genetics team within it, then click on Repositories.
 
-![Repositories in the CB-Genetics Team](CB-Genetics Team Repositories.png){alt="Repositories in the CB-Genetics Team" fig-align="center"}
+![Repositories in the CB-Genetics Team](CB-Genetics%20Team%20Repositories.png){fig-align="center"}
 
 *To do this: Settings -\>Manage access -\> Add teams -\> CB-Genetics (You choose permissions when establishing this access.)*
 
-#### Assign the nwfsc-cb-genetics Topic to Your Repository
+*For a guided tutorial, see [How to: Create a github repository in enterprise](https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html)*
 
-xxxx
+#### Add the nwfsc-cb-genetics Topic to Your Repository
+
+Topics are used in Github like hashtags are used in social media. It is another way to categorize repositories and organize them. For example, the [NWFSC Github Organization](https://noaa-nwfsc.github.io/) landing page has a link to all repositories with the [nwfsc-cb-genetics](https://github.com/search?q=topic%3Anwfsc-cb-genetics+org%3Anoaa-nwfsc&type=Repositories) topic.
+
+The "nwfsc-cb-genetics" topic should be added to all repositories in our group.
+
+![](nwfsc-cb-genetics topic results.png)
+
+*To do this: navigate to the main page of the repository -\> in the top right corner, to the right of "About", clikc the gear symbol -\> under "Topics" start to type nwfsc-cb-genetics, click the matching topic from the dropdown menu -\> click "Save changes"*
+
+*For a guided tutorial, see [How to: Create a github repository in enterprise](https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html)*
 
 #### Gitignore
 
-xxxx
+More guidance forthcoming!
 
 ## NOAA Github Repository Guidelines
 
