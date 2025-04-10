@@ -16,22 +16,24 @@ To work on a repository on your local machine, you need to clone it to Github de
 
 ![](how to desktop- file.webp){fig-align="center"}
 
-1.  On the open window, use either the **Github.com** tab or the **URL** tab to find the repository you want to clone.
-    -   On the **Github.com** tab, start typing the repository name or search the dropdown menu for repositories in your personal account or the nwfsc enterprise organization.
-    -   On the **URL** tab, paste the URL of the github browser repository you want to clone.
-    -   *Do not use the GitHub Enterprise tab*
+2.  On the open window, use either the **Github.com** tab or the **URL** tab to find the repository you want to clone.
 
-![](how to desktop- clone.webp){fig-align="center"}
+-   On the **Github.com** tab, start typing the repository name or search the dropdown menu for repositories in your personal account or the nwfsc enterprise organization.
+-   On the **URL** tab, paste the URL of the github browser repository you want to clone.
+-   *Do not use the GitHub Enterprise tab*
 
-1.  Select the local directory into which you want to clone the repository. Next to "Local Path", click **Choose** and navigate to the directory/folder where you want the github repository to live on your local machine.
-    -   This process will create a new folder in the directory you choose and call it your repository name. Location of the repository is up to you.!
-        -   The default directory will be in your Documents/Github folder on your computer and it will create a new folder called the name of the repository
-        -   You may choose to locate your repository folder somewhere in the project folder for which you are working
-    -   You may drag and drop the repository folder to another location after you initially clone it, but do not just move the files within the repo folder (there are hidden files that must go with it). Upon next working session, Github desktop will ask you to identify where you have moved the folder.
+![](how to desktop- clone.webp){fig-align="center" width="600"}
 
-![](how to desktop- choose directory.webp){fig-align="center"}
+3.  Select the local directory into which you want to clone the repository. Next to "Local Path", click **Choose** and navigate to the directory/folder where you want the github repository to live on your local machine.
 
-1.  At the bottom of the "Clone Repository" window, click **Clone**.
+-   This process will create a new folder in the directory you choose and call it your repository name. Location of the repository is up to you.!
+    -   The default directory will be in your Documents/Github folder on your computer and it will create a new folder called the name of the repository
+    -   You may choose to locate your repository folder somewhere in the project folder for which you are working
+-   You may drag and drop the repository folder to another location after you initially clone it, but do not just move the files within the repo folder (there are hidden files that must go with it). Upon next working session, Github desktop will ask you to identify where you have moved the folder.
+
+![](how to desktop- choose directory.webp){fig-align="center" width="600"}
+
+4.  At the bottom of the "Clone Repository" window, click **Clone**.
 
 Repositories you have cloned to your local computer are shown in the drop down menu at the top left of your github desktop window. Toggle between them to work in different repositories.
 
@@ -39,31 +41,31 @@ Repositories you have cloned to your local computer are shown in the drop down m
 
 *If you are starting from scratch and making a new repository, follow the instructions [How to: Create a github repository in enterprise](https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html), you will already have a cloned version on your desktop.*
 
-## Working on Analyses with Github
+## Working on Analyses with Github Desktop
 
-Open github desktop on your local computer.
+1.  Toggle to the repository you want to work on (top left corner of Github Desktop)
 
-Toggle to the repo you want to work on
+2.  Check to see if you need to pull any changes from origin.
 
-Check to see if you need to fetch origin (changes you or someone else made to the repository that aren't reflected on your local machine)- you want to work with the most up to date version of the repo always to avoid conflicts!
+    If you or someone else made changes to your repository, the top bar of your github desktop will say **Pull origin** with a number next to it. Click this to update your local version of the repository to with any changes that were made. If your local repository matches the remote (github.com) repository, this space will say "fetch origin" and will not have a number next to it.
 
-Click "Show files in Explorer" (maybe slightly different for mac) or navigate to the folder on your local machine linked to the github repo
+![](how to desktop- pull origin.png){fig-align="center" width="600"}
 
-Open code in R studio or whatever program etc (all markdown files can be edited in R)
+3.  In the center of github desktop, click Show files in Explorer (this may be slightly different on a mac) or navigate to the folder on your local machine that houses the github repository.
 
-Work!
+3.  Open you code in Rstudio or other program and work as you normally would!
+4.  Save your file(s) when you are finished working.
+5.  Navigate back to github desktop. Any edits you made to the repository folder should show up on the changes tab on the right.
 
-Save your file
+3.  Type a commit message stating what work you did and click **Commit to Main**
 
-Go back to github desktop- it will show there is a change to commit
+    Make sure to commit your changes to main at least once a day, but the frequency is up to you.
 
-Type a commit message (stating what work you did) and hit commit to main
+3.  Once you make a commit, the top bar of your github desktop will now say **Push origin** and have a number next to it. Clicking this will push the changes you made on your local computer to your remote repository, backing them up and keeping a log of your changes.
 
-Frequency of commits are up to you, at least once a day
+    [Always push to origin at the end of each work session, or once per day at minimum.]{.underline}
 
-After you make a commit, there will be a xxxxxx and it will say push to origin
-
-Always push to origin (pushes the changes you made to github so they are not just stored on your local machine, ie this backs things up for you!) at least at the end of your work session, once per day at minimum
+![](how to desktop- push origin.png){fig-align="center" width="600"}
 
 ## Key Terms
 
