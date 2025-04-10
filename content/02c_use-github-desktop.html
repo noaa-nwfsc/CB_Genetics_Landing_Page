@@ -195,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#clone-repositories-to-github-desktop" id="toc-clone-repositories-to-github-desktop" class="nav-link active" data-scroll-target="#clone-repositories-to-github-desktop">Clone Repositories to Github Desktop</a></li>
-  <li><a href="#working-on-analyses-with-github" id="toc-working-on-analyses-with-github" class="nav-link" data-scroll-target="#working-on-analyses-with-github">Working on Analyses with Github</a></li>
+  <li><a href="#working-on-analyses-with-github-desktop" id="toc-working-on-analyses-with-github-desktop" class="nav-link" data-scroll-target="#working-on-analyses-with-github-desktop">Working on Analyses with Github Desktop</a></li>
   <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/02c_use-github-desktop.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/02c_use-github-desktop.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -236,21 +236,22 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="how to desktop- file.webp" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<ol type="1">
-<li>On the open window, use either the <strong>Github.com</strong> tab or the <strong>URL</strong> tab to find the repository you want to clone.
+<ol start="2" type="1">
+<li>On the open window, use either the <strong>Github.com</strong> tab or the <strong>URL</strong> tab to find the repository you want to clone.</li>
+</ol>
 <ul>
 <li>On the <strong>Github.com</strong> tab, start typing the repository name or search the dropdown menu for repositories in your personal account or the nwfsc enterprise organization.</li>
 <li>On the <strong>URL</strong> tab, paste the URL of the github browser repository you want to clone.</li>
 <li><em>Do not use the GitHub Enterprise tab</em></li>
-</ul></li>
-</ol>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="how to desktop- clone.webp" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="how to desktop- clone.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
 </figure>
 </div>
-<ol type="1">
-<li>Select the local directory into which you want to clone the repository. Next to “Local Path”, click <strong>Choose</strong> and navigate to the directory/folder where you want the github repository to live on your local machine.
+<ol start="3" type="1">
+<li>Select the local directory into which you want to clone the repository. Next to “Local Path”, click <strong>Choose</strong> and navigate to the directory/folder where you want the github repository to live on your local machine.</li>
+</ol>
 <ul>
 <li>This process will create a new folder in the directory you choose and call it your repository name. Location of the repository is up to you.!
 <ul>
@@ -258,14 +259,13 @@ ul.task-list li input[type="checkbox"] {
 <li>You may choose to locate your repository folder somewhere in the project folder for which you are working</li>
 </ul></li>
 <li>You may drag and drop the repository folder to another location after you initially clone it, but do not just move the files within the repo folder (there are hidden files that must go with it). Upon next working session, Github desktop will ask you to identify where you have moved the folder.</li>
-</ul></li>
-</ol>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="how to desktop- choose directory.webp" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="how to desktop- choose directory.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
 </figure>
 </div>
-<ol type="1">
+<ol start="4" type="1">
 <li>At the bottom of the “Clone Repository” window, click <strong>Clone</strong>.</li>
 </ol>
 <p>Repositories you have cloned to your local computer are shown in the drop down menu at the top left of your github desktop window. Toggle between them to work in different repositories.</p>
@@ -276,20 +276,33 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><em>If you are starting from scratch and making a new repository, follow the instructions <a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html">How to: Create a github repository in enterprise</a>, you will already have a cloned version on your desktop.</em></p>
 </section>
-<section id="working-on-analyses-with-github" class="level2">
-<h2 class="anchored" data-anchor-id="working-on-analyses-with-github">Working on Analyses with Github</h2>
-<p>Open github desktop on your local computer.</p>
-<p>Toggle to the repo you want to work on</p>
-<p>Check to see if you need to fetch origin (changes you or someone else made to the repository that aren’t reflected on your local machine)- you want to work with the most up to date version of the repo always to avoid conflicts!</p>
-<p>Click “Show files in Explorer” (maybe slightly different for mac) or navigate to the folder on your local machine linked to the github repo</p>
-<p>Open code in R studio or whatever program etc (all markdown files can be edited in R)</p>
-<p>Work!</p>
-<p>Save your file</p>
-<p>Go back to github desktop- it will show there is a change to commit</p>
-<p>Type a commit message (stating what work you did) and hit commit to main</p>
-<p>Frequency of commits are up to you, at least once a day</p>
-<p>After you make a commit, there will be a xxxxxx and it will say push to origin</p>
-<p>Always push to origin (pushes the changes you made to github so they are not just stored on your local machine, ie this backs things up for you!) at least at the end of your work session, once per day at minimum</p>
+<section id="working-on-analyses-with-github-desktop" class="level2">
+<h2 class="anchored" data-anchor-id="working-on-analyses-with-github-desktop">Working on Analyses with Github Desktop</h2>
+<ol type="1">
+<li><p>Toggle to the repository you want to work on (top left corner of Github Desktop)</p></li>
+<li><p>Check to see if you need to pull any changes from origin.</p>
+<p>If you or someone else made changes to your repository, the top bar of your github desktop will say <strong>Pull origin</strong> with a number next to it. Click this to update your local version of the repository to with any changes that were made. If your local repository matches the remote (github.com) repository, this space will say “fetch origin” and will not have a number next to it.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to desktop- pull origin.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<ol start="3" type="1">
+<li><p>In the center of github desktop, click Show files in Explorer (this may be slightly different on a mac) or navigate to the folder on your local machine that houses the github repository.</p></li>
+<li><p>Open you code in Rstudio or other program and work as you normally would!</p></li>
+<li><p>Save your file(s) when you are finished working.</p></li>
+<li><p>Navigate back to github desktop. Any edits you made to the repository folder should show up on the changes tab on the right.</p></li>
+<li><p>Type a commit message stating what work you did and click <strong>Commit to Main</strong></p>
+<p>Make sure to commit your changes to main at least once a day, but the frequency is up to you.</p></li>
+<li><p>Once you make a commit, the top bar of your github desktop will now say <strong>Push origin</strong> and have a number next to it. Clicking this will push the changes you made on your local computer to your remote repository, backing them up and keeping a log of your changes.</p>
+<p><u>Always push to origin at the end of each work session, or once per day at minimum.</u></p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to desktop- push origin.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
 </section>
 <section id="key-terms" class="level2">
 <h2 class="anchored" data-anchor-id="key-terms">Key Terms</h2>
