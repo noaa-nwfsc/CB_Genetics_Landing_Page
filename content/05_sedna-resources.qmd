@@ -2,4 +2,48 @@
 title: Sedna Resources
 ---
 
-Content forthcoming!
+[Sedna Information and Best Practices](https://docs.google.com/document/d/1nn0T0OWEsQCBoCdaH6DSY69lQSbK3XnPlseyyQuU2Lc/edit?usp=sharing)
+
+### Github Push/Pull from Sedna
+
+-   In order to push changes from sedna to github repositories, you need to set up an ssh key. **Log into sedna** and follow these instructions **from your home directory**:
+
+    -   [Instructions on github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+    -   Run this: 
+
+``` bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+-   Press enter to save key to default location
+
+-   Enter a secure passphrase (prompted twice)
+
+Note: you do not need to use ssh-agent, but you can set up ssh-agent if you would like to avoid re-entering passphrase for every push. Ignore the portion on hardware security keys
+
+-   Next add your SSH key to your github account by copying the key you generated on sedna to your github account
+
+    -   [Instructions on git](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+    -   Run the following in sedna:
+
+``` bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+-   Add key and copy output from above into key field: <https://github.com/settings/keys>
+
+Now when you run git push, you will be prompted to enter your pass phrase for your ssh key. If you added your key to the ssh-agent, you will not be prompted for a pass phrase. **These steps allow you to push and pull to repositories in your personal github (name-NOAA).**
+
+**To push to a repository in the enterprise, you will need to set up SSO**: 
+
+-   Instructions on git: [Authorize ssh key for SSO](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/authorizing-an-ssh-key-for-use-with-saml-single-sign-on)
+
+-   Go to page with your key: <https://github.com/settings/keys>
+
+-   Click configure SSO
+
+-   Click an organization to authorize
+
+![](Authorizing an SSH key.png){fig-align="center"}
