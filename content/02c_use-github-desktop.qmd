@@ -53,13 +53,19 @@ Repositories you have cloned to your local computer are shown in the drop down m
 
 3.  In the center of github desktop, click Show files in Explorer (this may be slightly different on a mac) or navigate to the folder on your local machine that houses the github repository.
 
+![](how to desktop- show in explorer.png){fig-align="center" width="600"}
+
 3.  Open you code in Rstudio or other program and work as you normally would!
 4.  Save your file(s) when you are finished working.
 5.  Navigate back to github desktop. Any edits you made to the repository folder should show up on the changes tab on the right.
 
+![](how to desktop- changes made.png){fig-align="center" width="800"}
+
 3.  Type a commit message stating what work you did and click **Commit to Main**
 
     Make sure to commit your changes to main at least once a day, but the frequency is up to you.
+
+![](how to desktop- commit.png){fig-align="center" width="800"}
 
 3.  Once you make a commit, the top bar of your github desktop will now say **Push origin** and have a number next to it. Clicking this will push the changes you made on your local computer to your remote repository, backing them up and keeping a log of your changes.
 
@@ -69,16 +75,14 @@ Repositories you have cloned to your local computer are shown in the drop down m
 
 ## Key Terms
 
-clone- a copy of a repository that lives on your computer instead of a website's server (cloning is the act of making that copy). When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. THe repo you cloned is still connected to teh remote version so that you can push your local changes to the remove to keep them synced when youre online.
+**Clone**: A copy of a repository that lives on your computer instead of a website's server (cloning is the act of making that copy). When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. The repository you cloned is still connected to the remote version so that you can push your local changes to the remove to keep them synced when you are online.
 
-commit- an individual change to a file, when you make a commit to save your work, Git creates a unique ID that allows you to keep record of the specifci changes committed along with who make them and when.
+**Commit**: An individual change to a file, when you make a commit to save your work, Git creates a unique ID that allows you to keep record of the specific changes committed along with who make them and when.
 
-pull- fetching changes- pull those changes to your local copy so it is up to date
+**Pull**: Pull changes from the remote repository to your local copy so it is up to date.
 
-push- send your committed changes to a remote repository on github.com
+**Push**: Send your committed changes to a remote repository on github.com
 
-Remote repo- the repo on github.com
+**Remote repository**: The "master copy" of your repository on github.com
 
-local- your laptop/computer
-
-github desktop- program installed on your computer
+**Local Repository**: The copy of your repository that is on your laptop/computer
