@@ -21,6 +21,28 @@
     ]
   },
   {
+    "objectID": "content/02b_transfer-a-repo.html",
+    "href": "content/02b_transfer-a-repo.html",
+    "title": "How to: Transfer a repository from your personal Github to enterprise",
+    "section": "",
+    "text": "Accidentally created a repository on your personal Github page instead of the NWFSC Github Enterprise organization? This step by step tutorial will walk you through transferring a repository from your personal Github to enterprise.\nMake sure your repository has all suggested components, see the Github Resources tab for the CB Genetics Github Repository Guidelines.",
+    "crumbs": [
+      "Github Resources",
+      "How to: Transfer a repository from your personal Github to enterprise"
+    ]
+  },
+  {
+    "objectID": "content/02b_transfer-a-repo.html#transferring-a-repository-owned-by-your-personal-account",
+    "href": "content/02b_transfer-a-repo.html#transferring-a-repository-owned-by-your-personal-account",
+    "title": "How to: Transfer a repository from your personal Github to enterprise",
+    "section": "Transferring a repository owned by your personal account",
+    "text": "Transferring a repository owned by your personal account\n\nOn Github, navigate to the main page of the repository you wish to transfer.\nUnder your repository name, click Settings.\n\n\n\n\n\n\n\nScroll to the bottom of the settings page to the “Danger Zone” section, click Transfer.\n\n\n\n\n\n\n\nUnder “New owner”, select the radio dial next to “Select one of my organizations”. Under the Choose an owner dropdown, select noaa-nwfsc.\n\n\n\n\n\n\n\nA new box will appear titled Repository name, which designates the new name of the repository in the NWFSC enterprise organization. All repository names must be unique, make sure github tells you that your repository name is available.\n\n\n\n\n\n\n\nType the name of the repository you’d like to transfer in the Type REPOSITORY NAME to confirm location, then click I understand, transfer this repository.\n\n\n\n\n\n\n\nIMPORTANT NOTES:\nEli Holmes must approve all repository transfers to the NWFSC enterprise organization. Access to the repository in enterprise may not be automatic.\nYou should retain administrator control of your repository after transfer to enterprise. If this is not the case, email Eli Holmes with details so she can reassign you.",
+    "crumbs": [
+      "Github Resources",
+      "How to: Transfer a repository from your personal Github to enterprise"
+    ]
+  },
+  {
     "objectID": "content/05_sedna-resources.html",
     "href": "content/05_sedna-resources.html",
     "title": "Sedna Resources",
@@ -120,7 +142,7 @@
     "href": "content/02d_general-resources-glossary.html",
     "title": "General Github Resources and Glossary",
     "section": "",
-    "text": "Not sure why we use github? Check out this illustrated blog post explaining how github is used for supporting, reusing, contributing, and failing.",
+    "text": "Even if you don’t feel that your code is ready to be shared, it is important that it be backed up somewhere other than your local drive- Github is that place for coding projects! You can create a private repository that is visible only to you and nay Github Enterprise collaborators you designate if you are working on draft products that aren’t ready to share. Using Github does not immediately make your work public!\nNot sure why we use github? Check out this illustrated blog post explaining how github is used for supporting, reusing, contributing, and failing.",
     "crumbs": [
       "Github Resources",
       "General Github Resources and Glossary"
@@ -131,7 +153,7 @@
     "href": "content/02d_general-resources-glossary.html#why-github",
     "title": "General Github Resources and Glossary",
     "section": "",
-    "text": "Not sure why we use github? Check out this illustrated blog post explaining how github is used for supporting, reusing, contributing, and failing.",
+    "text": "Even if you don’t feel that your code is ready to be shared, it is important that it be backed up somewhere other than your local drive- Github is that place for coding projects! You can create a private repository that is visible only to you and nay Github Enterprise collaborators you designate if you are working on draft products that aren’t ready to share. Using Github does not immediately make your work public!\nNot sure why we use github? Check out this illustrated blog post explaining how github is used for supporting, reusing, contributing, and failing.",
     "crumbs": [
       "Github Resources",
       "General Github Resources and Glossary"
@@ -175,7 +197,7 @@
     "href": "content/02_github-resources.html",
     "title": "Github Resources",
     "section": "",
-    "text": "Best practices for working on analyses in github: \n\nAll repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account.\nWork and commit in the main branch of a repo (see special cases for branching and forking below)\nCommits\n\nPerform commits daily at minimum when working on analysis\nMake sure to push to origin (if working from github desktop) daily as well!\nIf working in a branch, commit daily to the branch, and determine how often to merge to main\n\nForking\n\nGenerally do not use!\nForking may be useful if contributors to the repository are outside of enterprise, but you must create and uphold good team standards on how often forks are merged back into the main repository.\n\nBranching\n\nUse sparingly!\nCreate a branch for a specific task, complete task, merge to main immediately. \n\nUse when you are making a change that could “break” the main repo for some reason\nBranches are easy to “get lost in” and can create confusion and complicate organization of your repo\n\n\nProjects can be created within our CB-genetics team. Use them to organize tasks or discussions associated with one or multiple repositories.",
+    "text": "Best practices for working on analyses in github: \n\nAll repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account. This ensures that code will be retained and remain accessible even if the author leaves the agency.\nWork and commit in the main branch of a repo (see special cases for branching and forking below)\nCommits\n\nPerform commits daily at minimum when working on analysis\nMake sure to push to origin (if working from github desktop) daily as well!\nIf working in a branch, commit daily to the branch, and determine how often to merge to main\n\nForking\n\nGenerally do not use!\nForking may be useful if contributors to the repository are outside of enterprise, but you must create and uphold good team standards on how often forks are merged back into the main repository.\n\nBranching\n\nUse sparingly!\nCreate a branch for a specific task, complete task, merge to main immediately. \n\nUse when you are making a change that could “break” the main repo for some reason\nBranches are easy to “get lost in” and can create confusion and complicate organization of your repo\n\n\nProjects can be created within our CB-genetics team. Use them to organize tasks or discussions associated with one or multiple repositories.",
     "crumbs": [
       "Github Resources"
     ]
@@ -185,7 +207,7 @@
     "href": "content/02_github-resources.html#cb-genetics-working-best-practices",
     "title": "Github Resources",
     "section": "",
-    "text": "Best practices for working on analyses in github: \n\nAll repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account.\nWork and commit in the main branch of a repo (see special cases for branching and forking below)\nCommits\n\nPerform commits daily at minimum when working on analysis\nMake sure to push to origin (if working from github desktop) daily as well!\nIf working in a branch, commit daily to the branch, and determine how often to merge to main\n\nForking\n\nGenerally do not use!\nForking may be useful if contributors to the repository are outside of enterprise, but you must create and uphold good team standards on how often forks are merged back into the main repository.\n\nBranching\n\nUse sparingly!\nCreate a branch for a specific task, complete task, merge to main immediately. \n\nUse when you are making a change that could “break” the main repo for some reason\nBranches are easy to “get lost in” and can create confusion and complicate organization of your repo\n\n\nProjects can be created within our CB-genetics team. Use them to organize tasks or discussions associated with one or multiple repositories.",
+    "text": "Best practices for working on analyses in github: \n\nAll repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account. This ensures that code will be retained and remain accessible even if the author leaves the agency.\nWork and commit in the main branch of a repo (see special cases for branching and forking below)\nCommits\n\nPerform commits daily at minimum when working on analysis\nMake sure to push to origin (if working from github desktop) daily as well!\nIf working in a branch, commit daily to the branch, and determine how often to merge to main\n\nForking\n\nGenerally do not use!\nForking may be useful if contributors to the repository are outside of enterprise, but you must create and uphold good team standards on how often forks are merged back into the main repository.\n\nBranching\n\nUse sparingly!\nCreate a branch for a specific task, complete task, merge to main immediately. \n\nUse when you are making a change that could “break” the main repo for some reason\nBranches are easy to “get lost in” and can create confusion and complicate organization of your repo\n\n\nProjects can be created within our CB-genetics team. Use them to organize tasks or discussions associated with one or multiple repositories.",
     "crumbs": [
       "Github Resources"
     ]
