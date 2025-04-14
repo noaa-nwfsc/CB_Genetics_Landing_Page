@@ -4,6 +4,8 @@ title: "General Github Resources and Glossary"
 
 ## Why Github?
 
+Even if you don't feel that your code is ready to be shared, it is important that it be backed up somewhere other than your local drive- Github is that place for coding projects! You can create a private repository that is visible only to you and nay Github Enterprise collaborators you designate if you are working on draft products that aren't ready to share. Using Github does not immediately make your work public!
+
 Not sure why we use github? Check out this [illustrated blog post](https://openscapes.org/blog/2022-05-27-github-illustrated-series/) explaining how github is used for supporting, reusing, contributing, and failing.
 
 ## Github Trainings and Videos
@@ -33,7 +35,7 @@ You can also open and edit markdown documents in R Studio. There is an option in
 A full list of terms can be found [here](https://docs.github.com/en/get-started/learning-about-github/github-glossary), but below are some common terms to get acquainted with.
 
 | Term             | Definition                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|-----------------|-------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | **branch**       | A branch is a parallel version of a repository. It is contained within the repository, but does not affect the primary or main branch allowing you to work freely without disrupting the "live" version. When you've made the changes you want to make, you can merge your branch back into the main branch to publish your changes.                                                                                                                     |
 | **clone**        | A clone is a copy of a repository that lives on your computer instead of on a website's server somewhere, or the act of making that copy. When you make a clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. The repository you cloned is still connected to the remote version so that you can push your local changes to the remote to keep them synced when you're online. |
 | **commit**       | A commit, or "revision", is an individual change to a file (or set of files). When you make a commit to save your work, Git creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to keep record of the specific changes committed along with who made them and when. Commits usually contain a commit message which is a brief description of what changes were made.                                                                        |

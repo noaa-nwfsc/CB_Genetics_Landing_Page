@@ -6,7 +6,7 @@ title: Github Resources
 
 Best practices for working on analyses in github: 
 
--   **All repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account.**
+-   **All repositories with NOAA work should be housed in Github Enterprise under the NWFSC organization, NOT in your personal/NOAA github account.** This ensures that code will be retained and remain accessible even if the author leaves the agency.
 
 -   **Work and commit in the main branch of a repo** (see special cases for branching and forking below)
 
