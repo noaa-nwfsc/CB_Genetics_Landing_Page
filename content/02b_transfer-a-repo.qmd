@@ -1,3 +1,36 @@
 ---
-title: "How to: Transfer a repository from your personal github to enterprise"
+title: "How to: Transfer a repository from your personal Github to enterprise"
 ---
+
+Accidentally created a repository on your personal Github page instead of the NWFSC Github Enterprise organization? This step by step tutorial will walk you through transferring a repository from your personal Github to enterprise.
+
+Make sure your repository has all suggested components, see the Github Resources tab for the [CB Genetics Github Repository Guidelines](https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02_github-resources.html#cb-genetics-github-repository-guidelines).
+
+## Transferring a repository owned by your personal account
+
+1.  On Github, navigate to the main page of the repository you wish to transfer.
+2.  Under your repository name, click **Settings**.
+
+![](how to transfer- settings.png){fig-align="center" width="700"}
+
+3.  Scroll to the bottom of the settings page to the "Danger Zone" section, click **Transfer**.
+
+![](how to transfer- danger zone.png){fig-align="center" width="700"}
+
+4.  Under "New owner", select the radio dial next to "Select one of my organizations". Under the **Choose an owner** dropdown, select **noaa-nwfsc**.
+
+![](how to transfer- owner.png){fig-align="center" width="700"}
+
+5.  A new box will appear titled Repository name, which designates the new name of the repository in the NWFSC enterprise organization. All repository names must be unique, make sure github tells you that your repository name is available.
+
+![](how to transfer- repo name.png){fig-align="center" width="700"}
+
+6.  Type the name of the repository you'd like to transfer in the **Type REPOSITORY NAME to confirm** location, then click **I understand, transfer this repository**.
+
+![](how to transfer- confirm.png){fig-align="center" width="700"}
+
+### *IMPORTANT NOTES:* 
+
+Eli Holmes must approve all repository transfers to the NWFSC enterprise organization. Access to the repository in enterprise may not be automatic.
+
+You should retain administrator control of your repository after transfer to enterprise. If this is not the case, email Eli Holmes with details so she can reassign you.
