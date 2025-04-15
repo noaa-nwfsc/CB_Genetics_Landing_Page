@@ -4,9 +4,9 @@ title: "How to: Create a github repository in enterprise"
 
 Step by step tutorial coming!
 
-Little section at end:
+## How to duplicate a repository into a new one
 
-Create a new repository based on someone else's:
+There may be instances where you wish to duplicate a repository of yours or someone else's into a new repository.
 
 -   Go to github file and download and work with it
 
