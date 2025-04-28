@@ -78,7 +78,7 @@ Assigning the CB-Genetics team to your repository keeps our group's work organiz
 
 ![Repositories in the CB-Genetics Team](CB-Genetics%20Team%20Repositories.png){fig-align="center" width="1200"}
 
-*To do this: Settings -\>Manage access -\> Add teams -\> CB-Genetics (You choose permissions when establishing this access.)*
+*To do this: Settings -\> Collaborators and teams -\> Manage access -\> Add teams -\> CB-Genetics (You choose permissions when establishing this access.)*
 
 *For a guided tutorial, see [How to: Create a github repository in enterprise](https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html)*
 
