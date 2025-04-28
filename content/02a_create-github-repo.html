@@ -358,7 +358,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-duplicate-a-repository-into-a-new-one" id="toc-how-to-duplicate-a-repository-into-a-new-one" class="nav-link active" data-scroll-target="#how-to-duplicate-a-repository-into-a-new-one">How to duplicate a repository into a new one</a></li>
+  <li><a href="#create-local-repository-with-github-desktop" id="toc-create-local-repository-with-github-desktop" class="nav-link active" data-scroll-target="#create-local-repository-with-github-desktop">Create local repository with Github Desktop</a></li>
+  <li><a href="#add-files-and-update-the-readme" id="toc-add-files-and-update-the-readme" class="nav-link" data-scroll-target="#add-files-and-update-the-readme">Add files and update the README</a></li>
+  <li><a href="#publish-repository-to-enterprise" id="toc-publish-repository-to-enterprise" class="nav-link" data-scroll-target="#publish-repository-to-enterprise">Publish repository to Enterprise</a></li>
+  <li><a href="#add-teams-and-topics-to-your-repository" id="toc-add-teams-and-topics-to-your-repository" class="nav-link" data-scroll-target="#add-teams-and-topics-to-your-repository">Add teams and topics to your repository</a></li>
+  <li><a href="#how-to-duplicate-a-repository-into-a-new-one" id="toc-how-to-duplicate-a-repository-into-a-new-one" class="nav-link" data-scroll-target="#how-to-duplicate-a-repository-into-a-new-one">How to duplicate a repository into a new one</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/02a_create-github-repo.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/02a_create-github-repo.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -385,21 +389,183 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Step by step tutorial coming!</p>
+<section id="create-local-repository-with-github-desktop" class="level3">
+<h3 class="anchored" data-anchor-id="create-local-repository-with-github-desktop">Create local repository with Github Desktop</h3>
+<ol type="1">
+<li>Open Github Desktop, click <strong>File</strong>, then click <strong>New Repository</strong>.</li>
+<li>In the <em>Create a new repository</em> popup window, fill in your repository name and description. Select the local path for your repository folder</li>
+</ol>
+<ul>
+<li><p>This process will create a new folder in the directory you choose and call it your repository name</p></li>
+<li><p>The default directory is in your Documents/Github folder on your computer</p></li>
+<li><p>It will likely make more sense to choose the folder that houses the rest of your project files as the local path for your github repository folder so all project items are in one place.</p>
+<ul>
+<li>You may drag and drop the repository folder to another location later, but you cannot just move the files within the folder to another location (there are hidden files that must go with it).</li>
+</ul></li>
+</ul>
+<ol start="3" type="1">
+<li>Check the box to <em>Initialize this repository with a README</em></li>
+<li>Choose a Git ignore for your repository if you want one. More details on gitignore files can be found on the <a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02_github-resources.html#gitignore">Github Resources tab</a>.</li>
+<li>Select the Apache License 2.0</li>
+<li>Click <strong>Create repository</strong>. Note: this creates a local copy of your repository, it is not yet published on github.com or on enterprise. Continue below!</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- create a new respository.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
+</figure>
+</div>
+<p>Your repository should now show up in the drop down menu at the top left of your github desktop window.</p>
+</section>
+<section id="add-files-and-update-the-readme" class="level3">
+<h3 class="anchored" data-anchor-id="add-files-and-update-the-readme">Add files and update the README</h3>
+<p>You now have a local copy of your github repository at the file path you specified. Your repository folder should have the same name as your repository name. If you have forgotten where this is, you can toggle to the repository in the top left corner of the Github desktop window and click <strong>Show in Explorer</strong> in the center of the window (this may be slightly different wording on a mac).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to desktop- toggle.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to desktop- show in explorer.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<p>You can now add files to your repository folder by dragging and dropping them from another file on your computer. It is recommended <strong>NOT</strong> to duplicate or create a copy of any files in this folder as this will cause confusion down the road. This will be your new working place for this project analysis! For a tutorial, see <a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02c_use-github-desktop.html">How to: Use Github Desktop</a>.</p>
+<p><em>Note: Large files (like fastq) cannot be uploaded to github and should not be in your repository folder unless using a gitignore file.</em></p>
+<p>Update your README file to provide a description of the repository. Suggested components include:</p>
+<ul>
+<li><p>Primary contact(s)</p></li>
+<li><p>Citation/Reference/DOI</p></li>
+<li><p>Objective</p></li>
+<li><p>Methods</p></li>
+<li><p>Major Results</p></li>
+<li><p>Disclaimer</p></li>
+</ul>
+<p>For more README details, see the <a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02_github-resources.html#readme">Github Resources</a> tab.</p>
+<p>Any file additions or changes to the README must now be committed. Navigate back to Github Desktop- any edits you made to the repository folder should show up on the changes tab.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to desktop- changes made.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<p>Type a commit message stating what work you did and click <strong>Commit to Main</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to desktop- commit.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+</section>
+<section id="publish-repository-to-enterprise" class="level3">
+<h3 class="anchored" data-anchor-id="publish-repository-to-enterprise">Publish repository to Enterprise</h3>
+<p>Once you have made and committed some changes, you are ready to publish your repository to github.com in the NWFSC enterprise organization. Only after the repository is published can it be shared and collaborated on.</p>
+<ol type="1">
+<li>On the top bar or in the center of the screen click <strong>Publish repository</strong></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- publish.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>In the <em>Publish repository</em> window, <strong>stay in the Github.com</strong> tab, do not go to the Github Enterprise tab!</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- publish tab.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Update the repository name and description if desired (recommend keeping these the same to reduce confusion).</li>
+<li>Decide whether to keep the code private (this can be changed later)</li>
+<li>Under “Organization” select <strong>noaa-nwfsc</strong> (this will publish the repository in enterprise!)</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- publish organization.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ol start="6" type="1">
+<li>Click <strong>Publish repository</strong></li>
+</ol>
+<p>You can now navigate to your new repository on github.com! Do this to make sure your repository published to the noaa-nwfsc enterprise organization correctly (you will want to do this for the next few steps anyway!).</p>
+</section>
+<section id="add-teams-and-topics-to-your-repository" class="level3">
+<h3 class="anchored" data-anchor-id="add-teams-and-topics-to-your-repository">Add teams and topics to your repository</h3>
+<section id="assign-the-cb-genetics-team-to-your-repository" class="level4">
+<h4 class="anchored" data-anchor-id="assign-the-cb-genetics-team-to-your-repository">Assign the CB-Genetics team to your repository</h4>
+<p>Assigning the CB-Genetics team to your repository keeps our group’s work organized and easy to find within the NWFSC enterprise organization. Simply navigate to the NWFSC enterprise organization, click on the Teams tab, expand the CB team to find the CB-Genetics team within it, then click on Repositories.</p>
+<p>To assign the CB-Genetics team to your repository and add it to the list, follow the instructions below:</p>
+<ol type="1">
+<li>On github remote (github.com), navigate to the main page of the repository</li>
+<li>In the heading, click <strong>Settings</strong></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- settings.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Under the “Access” heading on the left, click <strong>Collaborators and teams</strong></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- collaborators and teasm.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+</figure>
+</div>
+<ol start="4" type="1">
+<li>Scroll to the “Manage access” heading and click <strong>Add teams</strong></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- add teams.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+</figure>
+</div>
+<ol start="5" type="1">
+<li>Start typing <strong>noaa-nwfsc/cb-genetics</strong> and select it from the dropdown menu</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- add cb-genetics.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+</figure>
+</div>
+<ol start="6" type="1">
+<li>Determine role details for the CB-Genetics team for your repository (this can be changed at any time). Click <strong>Add selection</strong></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- team roles.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+</figure>
+</div>
+</section>
+<section id="add-the-nwfsc-cb-genetics-topic-to-your-repository" class="level4">
+<h4 class="anchored" data-anchor-id="add-the-nwfsc-cb-genetics-topic-to-your-repository">Add the “nwfsc-cb-genetics” topic to your repository</h4>
+<p>Topics are used in Github like hashtags are used in social media. It is another way to categorize repositories and organize them. For example, the <a href="https://noaa-nwfsc.github.io/">NWFSC Github Organization</a> landing page has a link to all repositories with the <a href="https://github.com/search?q=topic%3Anwfsc-cb-genetics+org%3Anoaa-nwfsc&amp;type=Repositories">nwfsc-cb-genetics</a> topic. The “nwfsc-cb-genetics” topic should be added to all repositories in our group.</p>
+<ol type="1">
+<li>On Github remote (github.com), navigate to the main page of the repository</li>
+<li>In the top right corner of the page, to the right of “About”, click the gear symbol</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- topics gear.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Under “Topics” start to type nwfsc-cb-genetics, click the matching topic from the drop down menu</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="how to create- topics.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+</figure>
+</div>
+<ol start="4" type="1">
+<li>Click <strong>Save changes</strong></li>
+</ol>
+</section>
+</section>
 <section id="how-to-duplicate-a-repository-into-a-new-one" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-duplicate-a-repository-into-a-new-one">How to duplicate a repository into a new one</h2>
 <p>There may be instances where you wish to duplicate a repository of yours or someone else’s into a new repository.</p>
-<ul>
-<li><p>Go to github file and download and work with it</p></li>
-<li><p>Importing when you want the whole repo, but want to make it your own</p>
-<ul>
-<li><p>No connections to parent repo</p></li>
-<li><p>Little button somewhere that may be hard to find in github</p></li>
-<li><p>How to: import a repository&nbsp;</p></li>
-<li><p>Caveats- this pulls over EVERYTHING</p></li>
-<li><p>It may be more useful/easier to just download the file with the code you want to replicate and create a new repository on your own</p></li>
-</ul></li>
-</ul>
+<p>The easiest way to do this is to download the script or analysis file(s) from that repository and start a new one with the instructions above.</p>
+<p>Importing a repository may be an option to create a complete duplicate of another repository, with the caveat that this will duplicate all files that may not be necessary anyway (data files, etc.). Follow <a href="https://docs.github.com/en/migrations/importing-source-code/using-github-importer/importing-a-repository-with-github-importer#importing-a-repository-with-github-importer">github instructions on importing a repository</a> if you are interested in this option.</p>
 
 
 </section>
