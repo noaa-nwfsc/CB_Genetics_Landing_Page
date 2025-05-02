@@ -20,7 +20,7 @@ title: "How to: Create a github repository in enterprise"
 5.  Select the Apache License 2.0
 6.  Click **Create repository**. Note: this creates a local copy of your repository, it is not yet published on github.com or on enterprise. Continue below!
 
-![](how to create- create a new respository.png){fig-align="center" width="450"}
+![](how%20to%20create-%20create%20a%20new%20respository.png){fig-align="center" width="450"}
 
 Your repository should now show up in the drop down menu at the top left of your github desktop window.
 
@@ -28,9 +28,9 @@ Your repository should now show up in the drop down menu at the top left of your
 
 You now have a local copy of your github repository at the file path you specified. Your repository folder should have the same name as your repository name. If you have forgotten where this is, you can toggle to the repository in the top left corner of the Github desktop window and click **Show in Explorer** in the center of the window (this may be slightly different wording on a mac).
 
-![](how to desktop- toggle.png){fig-align="center" width="600"}
+![](how%20to%20desktop-%20toggle.png){fig-align="center" width="600"}
 
-![](how to desktop- show in explorer.png){fig-align="center" width="600"}
+![](how%20to%20desktop-%20show%20in%20explorer.png){fig-align="center" width="600"}
 
 You can now add files to your repository folder by dragging and dropping them from another file on your computer. It is recommended **NOT** to duplicate or create a copy of any files in this folder as this will cause confusion down the road. This will be your new working place for this project analysis! For a tutorial, see [How to: Use Github Desktop](https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02c_use-github-desktop.html).
 
@@ -54,11 +54,11 @@ For more README details, see the [Github Resources](https://noaa-nwfsc.github.io
 
 Any file additions or changes to the README must now be committed. Navigate back to Github Desktop- any edits you made to the repository folder should show up on the changes tab.
 
-![](how to desktop- changes made.png){fig-align="center" width="600"}
+![](how%20to%20desktop-%20changes%20made.png){fig-align="center" width="600"}
 
 Type a commit message stating what work you did and click **Commit to Main**.
 
-![](how to desktop- commit.png){fig-align="center" width="600"}
+![](how%20to%20desktop-%20commit.png){fig-align="center" width="600"}
 
 ### Publish repository to Enterprise
 
@@ -66,17 +66,17 @@ Once you have made and committed some changes, you are ready to publish your rep
 
 1.  On the top bar or in the center of the screen click **Publish repository**
 
-![](how to create- publish.png){fig-align="center" width="700"}
+![](how%20to%20create-%20publish.png){fig-align="center" width="700"}
 
 2.  In the *Publish repository* window, **stay in the Github.com** tab, do not go to the Github Enterprise tab!
 
-![](how to create- publish tab.png){fig-align="center"}
+![](how%20to%20create-%20publish%20tab.png){fig-align="center"}
 
 3.  Update the repository name and description if desired (recommend keeping these the same to reduce confusion).
 4.  Decide whether to keep the code private (this can be changed later)
 5.  Under "Organization" select **noaa-nwfsc** (this will publish the repository in enterprise!)
 
-![](how to create- publish organization.png){fig-align="center"}
+![](how%20to%20create-%20publish%20organization.png){fig-align="center"}
 
 6.  Click **Publish repository**
 
@@ -93,23 +93,23 @@ To assign the CB-Genetics team to your repository and add it to the list, follow
 1.  On github remote (github.com), navigate to the main page of the repository
 2.  In the heading, click **Settings**
 
-![](how to create- settings.png){fig-align="center" width="700"}
+![](how%20to%20create-%20settings.png){fig-align="center" width="700"}
 
 3.  Under the "Access" heading on the left, click **Collaborators and teams**
 
-![](how to create- collaborators and teasm.png){fig-align="center" width="700"}
+![](how%20to%20create-%20collaborators%20and%20teasm.png){fig-align="center" width="700"}
 
 4.  Scroll to the "Manage access" heading and click **Add teams**
 
-![](how to create- add teams.png){fig-align="center" width="700"}
+![](how%20to%20create-%20add%20teams.png){fig-align="center" width="700"}
 
 5.  Start typing **noaa-nwfsc/cb-genetics** and select it from the dropdown menu
 
-![](how to create- add cb-genetics.png){fig-align="center" width="700"}
+![](how%20to%20create-%20add%20cb-genetics.png){fig-align="center" width="700"}
 
 6.  Determine role details for the CB-Genetics team for your repository (this can be changed at any time). Click **Add selection**
 
-![](how to create- team roles.png){fig-align="center" width="700"}
+![](how%20to%20create-%20team%20roles.png){fig-align="center" width="700"}
 
 #### Add the “nwfsc-cb-genetics” topic to your repository
 
@@ -118,11 +118,11 @@ Topics are used in Github like hashtags are used in social media. It is another 
 1.  On Github remote (github.com), navigate to the main page of the repository
 2.  In the top right corner of the page, to the right of "About", click the gear symbol
 
-![](how to create- topics gear.webp){fig-align="center" width="600"}
+![](how%20to%20create-%20topics%20gear.webp){fig-align="center" width="600"}
 
 3.  Under "Topics" start to type nwfsc-cb-genetics, click the matching topic from the drop down menu
 
-![](how to create- topics.png){fig-align="center" width="700"}
+![](how%20to%20create-%20topics.png){fig-align="center" width="700"}
 
 4.  Click **Save changes**
 
