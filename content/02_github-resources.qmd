@@ -85,8 +85,22 @@ If you do not see a .gitignore file in your repository directory:
 
 To edit your .gitignore for specific directories or file types, use the examples below:
 
+To ignore a whole directory
+
 ```         
-# To ignore a whole directory **/directory_name  # To ignore the files within a directory (the directory will show up in github remote but will be empty- if for some reason you want to preserve directory structure) directory_name/**  # To ignore a specific file extension, from anywhere in your repository directory (this will also ignore these file extensions when they exist in subdiretories) *.fasta *.fastq *.sam
+**/directory_name 
+```
+
+To ignore the files within a directory (the directory will show up in github remote but will be empty- if for some reason you want to preserve directory structure)
+
+```         
+directory_name/** 
+```
+
+To ignore a specific file extension, from anywhere in your repository directory (this will also ignore these file extensions when they exist in sub-diretories)
+
+```         
+*.fastq
 ```
 
 ### Assign CB-Genetics Team
