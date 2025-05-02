@@ -468,7 +468,12 @@ DISCLAIMER
 <li>If no .gitignore file exists, create one from a simple text file and save it as “.gitignore” in your main repository directory. You can use a template for a certain language from the list <a href="https://github.com/github/gitignore">here</a> or can create a useful .gitignore for your project with one or more coding languages <a href="https://www.toptal.com/developers/gitignore">here</a>.</li>
 </ol>
 <p>To edit your .gitignore for specific directories or file types, use the examples below:</p>
-<pre><code># To ignore a whole directory **/directory_name  # To ignore the files within a directory (the directory will show up in github remote but will be empty- if for some reason you want to preserve directory structure) directory_name/**  # To ignore a specific file extension, from anywhere in your repository directory (this will also ignore these file extensions when they exist in subdiretories) *.fasta *.fastq *.sam</code></pre>
+<p>To ignore a whole directory</p>
+<pre><code>**/directory_name </code></pre>
+<p>To ignore the files within a directory (the directory will show up in github remote but will be empty- if for some reason you want to preserve directory structure)</p>
+<pre><code>directory_name/** </code></pre>
+<p>To ignore a specific file extension, from anywhere in your repository directory (this will also ignore these file extensions when they exist in sub-diretories)</p>
+<pre><code>*.fastq</code></pre>
 </section>
 <section id="assign-cb-genetics-team" class="level3">
 <h3 class="anchored" data-anchor-id="assign-cb-genetics-team">Assign CB-Genetics Team</h3>
