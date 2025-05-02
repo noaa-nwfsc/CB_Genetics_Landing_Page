@@ -359,7 +359,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#cb-genetics-working-best-practices" id="toc-cb-genetics-working-best-practices" class="nav-link active" data-scroll-target="#cb-genetics-working-best-practices">CB Genetics Working Best Practices</a></li>
-  <li><a href="#cb-genetics-github-repository-guidelines" id="toc-cb-genetics-github-repository-guidelines" class="nav-link" data-scroll-target="#cb-genetics-github-repository-guidelines">CB Genetics Github Repository Guidelines</a></li>
+  <li><a href="#cb-genetics-github-repository-guidelines" id="toc-cb-genetics-github-repository-guidelines" class="nav-link" data-scroll-target="#cb-genetics-github-repository-guidelines">CB Genetics Github Repository Guidelines</a>
+  <ul class="collapse">
+  <li><a href="#readme" id="toc-readme" class="nav-link" data-scroll-target="#readme">README</a></li>
+  <li><a href="#license-file" id="toc-license-file" class="nav-link" data-scroll-target="#license-file">LICENSE File</a></li>
+  <li><a href="#gitignore" id="toc-gitignore" class="nav-link" data-scroll-target="#gitignore">Gitignore</a></li>
+  <li><a href="#assign-cb-genetics-team" id="toc-assign-cb-genetics-team" class="nav-link" data-scroll-target="#assign-cb-genetics-team">Assign CB-Genetics Team</a></li>
+  <li><a href="#add-the-nwfsc-cb-genetics-topic-to-your-repository" id="toc-add-the-nwfsc-cb-genetics-topic-to-your-repository" class="nav-link" data-scroll-target="#add-the-nwfsc-cb-genetics-topic-to-your-repository">Add the nwfsc-cb-genetics Topic to Your Repository</a></li>
+  </ul></li>
   <li><a href="#noaa-github-repository-guidelines" id="toc-noaa-github-repository-guidelines" class="nav-link" data-scroll-target="#noaa-github-repository-guidelines">NOAA Github Repository Guidelines</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/02_github-resources.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/02_github-resources.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -420,8 +427,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="cb-genetics-github-repository-guidelines">CB Genetics Github Repository Guidelines</h2>
 <p>See <a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html">How to: Create a github repository in enterprise</a> for a full tutorial walk through of creating a github repository.</p>
 <p>From the <a href="https://nmfs-opensci.github.io/GitHub-Guide/#sec-guidelines">NMFS Github Guide</a>, your repository should include a README, the government product DISCLAIMER, and LICENSE file. In addition, all CB Genetics github repositories should include the following components:</p>
-<section id="readme" class="level4">
-<h4 class="anchored" data-anchor-id="readme">README</h4>
+<section id="readme" class="level3">
+<h3 class="anchored" data-anchor-id="readme">README</h3>
 <p>The README file should provide a detailed description of the repository. The contents of the README will vary depending on the project type and degree of completeness, but should include a few common elements.</p>
 <p>Recommended README components:</p>
 <ul>
@@ -446,13 +453,25 @@ DISCLAIMER
 </div>
 </div>
 </section>
-<section id="license-file" class="level4">
-<h4 class="anchored" data-anchor-id="license-file">LICENSE File</h4>
+<section id="license-file" class="level3">
+<h3 class="anchored" data-anchor-id="license-file">LICENSE File</h3>
 <p>You should add an open license file to the GitHub repository before work begins. This establishes from the moment work starts that all work is open source (as required for publicly released federally funded work).</p>
 <p>To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called LICENSE. Under the file name, click Choose a license template, select <strong>Apache-2.0 license</strong>.</p>
 </section>
-<section id="assign-cb-genetics-team" class="level4">
-<h4 class="anchored" data-anchor-id="assign-cb-genetics-team">Assign CB-Genetics Team</h4>
+<section id="gitignore" class="level3">
+<h3 class="anchored" data-anchor-id="gitignore">Gitignore</h3>
+<p>.gitignore files are used to tell Github to ignore some files in your working directory when pushing to Github remote. This is useful because Github cannot handle large files (such as fastq) and sometimes we don’t want every file in our working directory to be pushed up to Github.</p>
+<p>A .gitignore file should be created when you first set up your repository - often we choose a template like the R template because we are using R code in our repository and the .gitignore file will ignore syncing the temporary files that are created when working in R.</p>
+<p>If you do not see a .gitignore file in your repository directory:</p>
+<ol type="1">
+<li>Check to see that it is not just a hidden file- On a mac, press Command + Shift + . to show hidden files</li>
+<li>If no .gitignore file exists, create one from a simple text file and save it as “.gitignore” in your main repository directory. You can use a template for a certain language from the list <a href="https://github.com/github/gitignore">here</a> or can create a useful .gitignore for your project with one or more coding languages <a href="https://www.toptal.com/developers/gitignore">here</a>.</li>
+</ol>
+<p>To edit your .gitignore for specific directories or file types, use the examples below:</p>
+<pre><code># To ignore a whole directory **/directory_name  # To ignore the files within a directory (the directory will show up in github remote but will be empty- if for some reason you want to preserve directory structure) directory_name/**  # To ignore a specific file extension, from anywhere in your repository directory (this will also ignore these file extensions when they exist in subdiretories) *.fasta *.fastq *.sam</code></pre>
+</section>
+<section id="assign-cb-genetics-team" class="level3">
+<h3 class="anchored" data-anchor-id="assign-cb-genetics-team">Assign CB-Genetics Team</h3>
 <p>Assigning the CB-Genetics team to your repository keeps our group’s work organized and easy to find within the NWFSC enterprise organization. Simply navigate to the NWFSC enterprise organization, click on the Teams tab, expand the CB team to find the CB-Genetics team within it, then click on Repositories.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -463,17 +482,13 @@ DISCLAIMER
 <p><em>To do this: Settings -&gt; Collaborators and teams -&gt; Manage access -&gt; Add teams -&gt; CB-Genetics (You choose permissions when establishing this access.)</em></p>
 <p><em>For a guided tutorial, see <a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html">How to: Create a github repository in enterprise</a></em></p>
 </section>
-<section id="add-the-nwfsc-cb-genetics-topic-to-your-repository" class="level4">
-<h4 class="anchored" data-anchor-id="add-the-nwfsc-cb-genetics-topic-to-your-repository">Add the nwfsc-cb-genetics Topic to Your Repository</h4>
+<section id="add-the-nwfsc-cb-genetics-topic-to-your-repository" class="level3">
+<h3 class="anchored" data-anchor-id="add-the-nwfsc-cb-genetics-topic-to-your-repository">Add the nwfsc-cb-genetics Topic to Your Repository</h3>
 <p>Topics are used in Github like hashtags are used in social media. It is another way to categorize repositories and organize them. For example, the <a href="https://noaa-nwfsc.github.io/">NWFSC Github Organization</a> landing page has a link to all repositories with the <a href="https://github.com/search?q=topic%3Anwfsc-cb-genetics+org%3Anoaa-nwfsc&amp;type=Repositories">nwfsc-cb-genetics</a> topic.</p>
 <p>The “nwfsc-cb-genetics” topic should be added to all repositories in our group.</p>
 <p><img src="nwfsc-cb-genetics topic results.png" class="img-fluid" width="700"></p>
 <p><em>To do this: navigate to the main page of the repository -&gt; in the top right corner, to the right of “About”, clikc the gear symbol -&gt; under “Topics” start to type nwfsc-cb-genetics, click the matching topic from the dropdown menu -&gt; click “Save changes”</em></p>
 <p><em>For a guided tutorial, see <a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/content/02a_create-github-repo.html">How to: Create a github repository in enterprise</a></em></p>
-</section>
-<section id="gitignore" class="level4">
-<h4 class="anchored" data-anchor-id="gitignore">Gitignore</h4>
-<p>More guidance forthcoming!</p>
 </section>
 </section>
 <section id="noaa-github-repository-guidelines" class="level2">
