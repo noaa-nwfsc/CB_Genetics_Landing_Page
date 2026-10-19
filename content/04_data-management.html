@@ -49,9 +49,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-93d77ab541721daab08a6007960a05f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-437bf2258029624415f2f14caa62b689.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-93d77ab541721daab08a6007960a05f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3245a9efd2d27e2c6a1ec784bf206a0c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d949c74a40ea39fb0bf3b5edfd17d417.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3245a9efd2d27e2c6a1ec784bf206a0c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -366,7 +366,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-management-plan-first-draft" id="toc-data-management-plan-first-draft" class="nav-link active" data-scroll-target="#data-management-plan-first-draft">Data Management Plan: first draft</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#data-storage-options" id="toc-data-storage-options" class="nav-link" data-scroll-target="#data-storage-options">1. Data Storage Options</a>
+  <ul class="collapse">
+  <li><a href="#shared-drives" id="toc-shared-drives" class="nav-link" data-scroll-target="#shared-drives">1.1 Shared Drives</a></li>
+  <li><a href="#google-cloud-buckets" id="toc-google-cloud-buckets" class="nav-link" data-scroll-target="#google-cloud-buckets">1.2 Google Cloud Buckets</a></li>
+  <li><a href="#sedna" id="toc-sedna" class="nav-link" data-scroll-target="#sedna">1.3 Sedna</a></li>
+  <li><a href="#local-instrument-storage" id="toc-local-instrument-storage" class="nav-link" data-scroll-target="#local-instrument-storage">1.4 Local Instrument Storage</a></li>
+  <li><a href="#personal-computer" id="toc-personal-computer" class="nav-link" data-scroll-target="#personal-computer">1.5 Personal Computer</a></li>
+  <li><a href="#ncbi-sra-public-repositories" id="toc-ncbi-sra-public-repositories" class="nav-link" data-scroll-target="#ncbi-sra-public-repositories">1.6 NCBI / SRA / Public Repositories</a></li>
+  </ul></li>
+  <li><a href="#data-transfer" id="toc-data-transfer" class="nav-link" data-scroll-target="#data-transfer">2. Data Transfer</a>
+  <ul class="collapse">
+  <li><a href="#rclone" id="toc-rclone" class="nav-link" data-scroll-target="#rclone">2.1 Rclone</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/04_data-management.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/04_data-management.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -393,10 +406,166 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="data-management-plan-first-draft" class="level3">
-<h3 class="anchored" data-anchor-id="data-management-plan-first-draft">Data Management Plan: first draft</h3>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The Genetics and Evolution Data Management Plan provides guidance to:</p>
+<ul>
+<li>Manage data storage and archive</li>
+<li>Document our datasets, projects, analyses</li>
+<li>Define our resources</li>
+</ul>
+<hr>
+</section>
+<section id="data-storage-options" class="level2">
+<h2 class="anchored" data-anchor-id="data-storage-options">1. Data Storage Options</h2>
+<p>Considerations for organizing data storage:</p>
+<ul>
+<li>What are the data that you are storing?</li>
+<li>Hot, Cold, Warm?</li>
+<li>Current, Future access needs?</li>
+</ul>
+<section id="shared-drives" class="level3">
+<h3 class="anchored" data-anchor-id="shared-drives">1.1 Shared Drives</h3>
+<ul>
+<li><strong>Use Cases:</strong></li>
+<li><strong>Protocol:</strong>
+<ul>
+<li>Choose the appropriate shared drive: <a href="https://docs.google.com/spreadsheets/d/1et7hupHv0MHEWzbkHK9VAX8ibtgMpLwXuA_UnHZGJ1A/edit?gid=2022882699#gid=2022882699">GE Program Google Shared Drive Inventory</a> and follow the naming convention for a given drive</li>
+</ul></li>
+<li><strong>Limitations:</strong>
+<ul>
+<li>Limit on number of files, folders, and shortcuts</li>
+<li>IF SYNCING WITH COMPUTER:</li>
+</ul></li>
+</ul>
+</section>
+<section id="google-cloud-buckets" class="level3">
+<h3 class="anchored" data-anchor-id="google-cloud-buckets">1.2 Google Cloud Buckets</h3>
+<ul>
+<li><a href="https://console.cloud.google.com/storage/browser/nwfsc_cb_genetics_shared">CB Genetics Bucket</a></li>
+<li><strong>Use Cases:</strong>
+<ul>
+<li>Finished projects that no longer need to be downloaded</li>
+<li>Archive data that no longer needs to be read or downloaded</li>
+<li>Data / files that will be worked with in Google Workstation</li>
+</ul></li>
+<li><strong>Protocol:</strong>
+<ul>
+<li>Transfer data with <code>gcloud storage</code> command suite (<code>gcloud storage rsync</code>)</li>
+<li>Instructions incoming</li>
+<li><strong>Naming convention:</strong> Name your folder <code>ProjectName_Analysis_Date</code> or <code>ProjectName_Archive_Date</code> depending on whether you have an active project being worked on in Google Workstation (Analysis) or you are storing an archived dataset or analysis (Archive)</li>
+</ul></li>
+<li><strong>Limitations:</strong> Costs to read and download the data - new resource / unknown how pay structure will work</li>
+</ul>
+</section>
+<section id="sedna" class="level3">
+<h3 class="anchored" data-anchor-id="sedna">1.3 Sedna</h3>
+<ul>
+<li><strong>Use Cases:</strong> Active storage for data that is currently being used</li>
+<li><strong>Protocol:</strong> Put path to your data in inventory spreadsheet (e.g., <code>Sedna- /home/user/radseq/data</code>)</li>
+<li><strong>Limitations:</strong> Space is limited, not a long-term location for archived data</li>
+</ul>
+</section>
+<section id="local-instrument-storage" class="level3">
+<h3 class="anchored" data-anchor-id="local-instrument-storage">1.4 Local Instrument Storage</h3>
+<ul>
+<li><strong>Use Cases:</strong> Storage for data directly from machine (data generation)</li>
+<li><strong>Protocol:</strong> Indicate folder name and instrument in Local Instrument column</li>
+<li><strong>Limitations:</strong> Space is limited, not a long-term location for archived data, everyone on the team has access and someone could delete your data</li>
+</ul>
+</section>
+<section id="personal-computer" class="level3">
+<h3 class="anchored" data-anchor-id="personal-computer">1.5 Personal Computer</h3>
+<ul>
+<li><strong>Use Cases:</strong> Active storage for data that is currently being used</li>
+<li><strong>Protocol:</strong> Put “personal computer” in inventory spreadsheet</li>
+<li><strong>Limitations:</strong> No one else can access, space is limited, not a long-term location for archived data</li>
+</ul>
+</section>
+<section id="ncbi-sra-public-repositories" class="level3">
+<h3 class="anchored" data-anchor-id="ncbi-sra-public-repositories">1.6 NCBI / SRA / Public Repositories</h3>
+<ul>
+<li><strong>Use Cases:</strong> Archive for raw sequencing data and relevant metadata</li>
+<li><strong>Protocol:</strong> Upload to SRA, delay publishing for 5 years if desired</li>
+<li>All papers using genomic data will have sequences uploaded to SRA - this is our best long-term archive option</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Primary storage location</th>
+<th style="text-align: center;">Secondary storage locations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Shared GDrive (NOT personal MyDrive)<br>Google Bucket<br>SRA (NCBI)</td>
+<td style="text-align: center;">Shared GDrive (NOT personal MyDrive)<br>Google Bucket<br>SRA (NCBI)<br>Sedna<br>QNAP</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Option</th>
+<th style="text-align: left;">Pros</th>
+<th style="text-align: left;">Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Shared Drive</strong></td>
+<td style="text-align: left;">Accessible to team members</td>
+<td style="text-align: left;">Limited File Number<br>Bottleneck transfer size</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Google Bucket</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Not very accessible for analysis (unless using Google Cloud)<br>Cost Associated with Reading and Downloading</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>QNAP</strong></td>
+<td style="text-align: left;">Already exists off of sequencer</td>
+<td style="text-align: left;">Does not last forever</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Personal Computer</strong></td>
+<td style="text-align: left;">Free<br>Easy Access for analysis</td>
+<td style="text-align: left;">Not accessible to others</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sedna</strong></td>
+<td style="text-align: left;">Free</td>
+<td style="text-align: left;">Space can be limited long term</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>SRA</strong></td>
+<td style="text-align: left;">Free<br>Accessible<br>Complies with public availability of data</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="data-transfer" class="level2">
+<h2 class="anchored" data-anchor-id="data-transfer">2. Data Transfer</h2>
+<section id="rclone" class="level3">
+<h3 class="anchored" data-anchor-id="rclone">2.1 Rclone</h3>
+<p><a href="https://rclone.org/">Rclone</a> requires configuration the first time you use it. On your local computer, just download rclone and put it in a folder on your computer (documents, desktop, downloads, etc.). See <a href="https://docs.google.com/document/d/1nn0T0OWEsQCBoCdaH6DSY69lQSbK3XnPlseyyQuU2Lc/edit?tab=t.0#heading=h.zbyj83ms3h2">Instructions to set up Rclone on your local machine or Sedna</a>.</p>
+<p><strong>Usage:</strong></p>
+<p>```bash rclone copy /path/to/file.txt google:destination/folder/“quotes for folders with spaces”</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
