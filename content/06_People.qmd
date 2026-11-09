@@ -86,7 +86,7 @@ format: html
     </tr>
     <tr>
       <td>Ewann Berntson</td>
-      <td>GTseq, eDNA, Chinook, Steelhead</td>
+      <td>GTseq, eDNA, Hatchery Dynamics, Relative Reproductive Success, Chinook, Steelhead</td>
     </tr>    
     <tr>
       <td>Mia Nahom</td>
