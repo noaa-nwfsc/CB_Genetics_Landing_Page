@@ -41,25 +41,6 @@ title: People
 
 
 ---
-title: "Interactive DT Table"
-format: html
----
-
-```{r}
-#| echo: false
-library(DT)
-
-df <- data.frame(
-  Name = c("Kim Parsons", "Krista Nichols", "Meredith Everett", 
-           "Piper Schwenke", "Joanna Griffiths", "Emma Horton"),
-  Experience = c("SRKW", "SI Omics, Bycatch", "eDNA", 
-                 "Forensics", "None", "None")
-)
-
-datatable(df, options = list(pageLength = 10))
-```
-
----
 title: "Sortable Table"
 format:
   html:
