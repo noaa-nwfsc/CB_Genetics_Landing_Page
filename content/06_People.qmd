@@ -38,3 +38,68 @@ title: People
     </tr>
   </tbody>
 </table>
+
+
+---
+title: "Interactive DT Table"
+format: html
+---
+
+```{r}
+#| echo: false
+library(DT)
+
+df <- data.frame(
+  Name = c("Kim Parsons", "Krista Nichols", "Meredith Everett", 
+           "Piper Schwenke", "Joanna Griffiths", "Emma Horton"),
+  Experience = c("SRKW", "SI Omics, Bycatch", "eDNA", 
+                 "Forensics", "None", "None")
+)
+
+datatable(df, options = list(pageLength = 10))
+```
+
+---
+title: "Sortable Table"
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.css">
+          <script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.js"></script>
+---
+
+<table class="sortable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Analysis Experience</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kim Parsons</td>
+      <td>SRKW</td>
+    </tr>
+    <tr>
+      <td>Krista Nichols</td>
+      <td>SI Omics, Bycatch</td>
+    </tr>
+    <tr>
+      <td>Meredith Everett</td>
+      <td>eDNA</td>
+    </tr>
+    <tr>
+      <td>Piper Schwenke</td>
+      <td>Forensics</td>
+    </tr>
+    <tr>
+      <td>Joanna Griffiths</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Emma Horton</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
