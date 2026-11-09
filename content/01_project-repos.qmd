@@ -4,6 +4,101 @@ title: CB Genetics Github Repositories
 
 ## Project Repositories
 
+<table>
+  <thead>
+    <tr>
+      <th style="width: 25%;">Project</th>
+      <th style="width: 45%;">Description</th>
+      <th style="width: 15%;">Data Input(s)</th>
+      <th style="width: 15%;">Contact Authors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/vermilion-sunset-gtseq" target="_blank" rel="noopener noreferrer">Vermilion Sunset Rockfish</a></td>
+      <td>The primary objective was to conduct a genomic analysis to distinguish the vermilion rockfish stock along the west coast from sunset rockfish using tissue samples previously collected during fishery-independent resource surveys. Specifically, we (1) used high-throughput sequencing technologies to identify single nucleotide polymorphisms (SNPs) which produced an assay that definitively separates the two species, (2) applied this SNP panel to over 27 thousand samples and finally (3) identified species-specific demographic and biological differences.</td>
+      <td>GT-seq</td>
+      <td>Anita Wray (<a href="mailto:anita.wray@noaa.gov">anita.wray@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/Rockfish-Metabarcoding" target="_blank" rel="noopener noreferrer">Rockfish Metabarcoding</a></td>
+      <td>—</td>
+      <td>Metabarcoding</td>
+      <td>Meredith Everett (<a href="mailto:meredith.everett@noaa.gov">meredith.everett@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/vermilion_sunset_epigenetics" target="_blank" rel="noopener noreferrer">Vermilion Sunset Epigenetic Project</a></td>
+      <td>We leveraged findings from our ongoing research to improve estimates of age for both vermilion and sunset rockfish. Specifically, we will use epigenetic analyses of fin clips to estimate the age of individuals in both species using a subset of our existing 30,000 vermilion and sunset rockfish samples collected from 2004-2023 during two industry-collaborative research surveys. Epigenetic ageing provides a non-lethal method of determining age and lifespan using the degree of methylation at genomic sites. These sites are preselected from previous studies.</td>
+      <td>Bisulfite sequencing</td>
+      <td>Anita Wray (<a href="mailto:anita.wray@noaa.gov">anita.wray@noaa.gov</a>), Marty Kardos (<a href="mailto:martin.kardos@noaa.gov">martin.kardos@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/EulachonRADseq" target="_blank" rel="noopener noreferrer">Eulachon RADseq</a></td>
+      <td>Multi-year Eulachon RAD-seq analysis (2009-2020) for the following populations: Elwha, Cowlitz, Lyre, Fraser, Skeena, Nass, Kemano, Grays, Sandy, Klamath</td>
+      <td>RADseq</td>
+      <td>Mia Nahom (<a href="mailto:mia.nahom@noaa.gov">mia.nahom@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/LEKT-Eulachon-SpeciesID" target="_blank" rel="noopener noreferrer">Lower Elwha Klallam Tribe Eulachon Species ID</a></td>
+      <td>Species identification of tissue, larvae, and eggs collected by the Lower Elwha Klallam Tribe (LEKT) to understand eulachon distribution using a metabarcoding approach.</td>
+      <td>Metabarcoding</td>
+      <td>Sam Engster (<a href="mailto:samantha.engster@noaa.gov">samantha.engster@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/eulachonGSI" target="_blank" rel="noopener noreferrer">NWFSC Eulachon GSI Project</a></td>
+      <td>—</td>
+      <td>—</td>
+      <td>Maddie Betts (<a href="mailto:madison.betts@noaa.gov">madison.betts@noaa.gov</a>), Krista Nichols (<a href="mailto:krista.nichols@noaa.gov">krista.nichols@noaa.gov</a>), Mia Nahom (<a href="mailto:mia.nahom@noaa.gov">mia.nahom@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/Wenatchee-RRS" target="_blank" rel="noopener noreferrer">Wenatchee-RRS</a></td>
+      <td>Monitoring the reproductive success of naturally spawning hatchery and natural spring Chinook salmon in the Wenatchee River. Specifically, what is the relative reproductive success (RRS) of naturally spawning hatchery fish and what are the causes of poor reproductive success of hatchery fish?</td>
+      <td>—</td>
+      <td>Mike Ford (<a href="mailto:mike.ford@noaa.gov">mike.ford@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/Wenatchee_WGS" target="_blank" rel="noopener noreferrer">Wenatchee_WGS</a></td>
+      <td>This project uses WGS to characterize genomic variation across ~720 returning-adult Chinook salmon from the Wenatchee river. Specifically, we will investigate (1) genomic divergence between hatchery- and wild-origin fish separated by 1-3 generations, and (2) genomic variation for reproductive fitness based on origin and spawning location (a genotype by environment interaction).</td>
+      <td>—</td>
+      <td>Joanna Griffiths (<a href="mailto:joanna.griffiths@noaa.gov">joanna.griffiths@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/Chinook_IRA_Puget_Sound_Genomics" target="_blank" rel="noopener noreferrer">Chinook IRA Puget Sound Genomics</a></td>
+      <td>This project investigates the genomic basis for the propensity for early ocean migration and seawater survival in Puget Sound Chinook Salmon.</td>
+      <td>—</td>
+      <td>Joanna Griffiths (<a href="mailto:joanna.griffiths@noaa.gov">joanna.griffiths@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/chinook-bycatch-genotyping" target="_blank" rel="noopener noreferrer">Chinook bycatch genotyping</a></td>
+      <td>The objective of this repo is to provide core code for chinook bycatch genotyping using GTscore, as well as individual genotyping runs for data produced on the project.</td>
+      <td>GTseq</td>
+      <td>Krista Nichols (<a href="mailto:krista.nichols@noaa.gov">krista.nichols@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/qPCR_CPS" target="_blank" rel="noopener noreferrer">qPCR_CPS</a></td>
+      <td>The primary objective of this study is to use statistical geospatial modeling to analyze 2023 biomass estimates of CPS—specifically sardines and anchovies—along the U.S. West Coast, derived from eDNA and trawl survey data. This analysis employs statistical methods to interpolate discrete sample points, generating smooth, continuous biomass maps from discrete observation. This approach aims to clarify spatial distribution patterns, assess the influence of environmental covariates, and evaluate the efficacy of eDNA sampling compared to traditional acoustic-trawl surveys, ultimately informing fisheries stock assessments.</td>
+      <td>eDNA qPCR detections, trawl survey data</td>
+      <td>Michelle Hauer (<a href="mailto:michelle.hauer@noaa.gov">michelle.hauer@noaa.gov</a>)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/noaa-nwfsc/SRKW-Genetics" target="_blank" rel="noopener noreferrer">SRKW-Genetics</a></td>
+      <td>
+        <ul>
+          <li>Prey Scales and Bits</li>
+          <li>Species identification</li>
+          <li>Genetic stock identification</li>
+          <li>Fecal and Mucus</li>
+          <li>Individual whale identification</li>
+          <li>Pedigree analysis</li>
+          <li>Prey metabarcoding</li>
+        </ul>
+      </td>
+      <td>—</td>
+      <td>Kim Parsons (<a href="mailto:kim.parsons@noaa.gov">kim.parsons@noaa.gov</a>), Emma Horton (<a href="mailto:emma.horton@noaa.gov">emma.horton@noaa.gov</a>)</td>
+    </tr>
+  </tbody>
+</table>
+
 To add your repository to this table, edit the table in the 01_project-repos.qmd file of the content folder of the [github repo for this landing page](https://github.com/noaa-nwfsc/CB_Genetics_Landing_Page). This is a quarto markdown file that creates this specific page and can be edited with basic markdown syntax (see General Github Resources and Glossary page if you need assistance). Repos are currently organized by species! Remember you must push your commit to origin if working from desktop. The rendering and publishing (updating the webpage) will take a few minutes to complete.
 
 +--------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+------------------------------------------------------------------------------------------------------------------+
