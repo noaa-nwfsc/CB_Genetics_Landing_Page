@@ -2,9 +2,57 @@
 title: People
 ---
 
-## CB Genetics People
+## CB Genetics and Evolution Team Members
 
-<table>
+---
+title: "CB Genetics and Evolution Team Members"
+format: html
+---
+
+<style>
+  .custom-sortable-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 1rem 0;
+  }
+  .custom-sortable-table th,
+  .custom-sortable-table td {
+    border: 1px solid #d1d5db;
+    padding: 10px 14px;
+    text-align: left;
+  }
+  .custom-sortable-table th {
+    background-color: #f3f4f6;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 28px;
+  }
+  .custom-sortable-table th:hover {
+    background-color: #e5e7eb;
+  }
+  .custom-sortable-table th::after {
+    content: "⇅";
+    position: absolute;
+    right: 10px;
+    color: #9ca3af;
+    font-size: 0.85em;
+  }
+  .custom-sortable-table th.asc::after {
+    content: "▲";
+    color: #111827;
+  }
+  .custom-sortable-table th.desc::after {
+    content: "▼";
+    color: #111827;
+  }
+  .custom-sortable-table tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+</style>
+
+<table class="custom-sortable-table" id="teamTable">
   <thead>
     <tr>
       <th>Name</th>
@@ -39,48 +87,31 @@ title: People
   </tbody>
 </table>
 
+<script>
+  document.querySelectorAll("#teamTable th").forEach((headerCell, columnIndex) => {
+    headerCell.addEventListener("click", () => {
+      const table = headerCell.closest("table");
+      const tbody = table.querySelector("tbody");
+      const rows = Array.from(tbody.querySelectorAll("tr"));
+      const isAscending = headerCell.classList.contains("asc");
 
----
-title: "Sortable Table"
-format:
-  html:
-    include-in-header:
-      - text: |
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.css">
-          <script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.js"></script>
----
+      table.querySelectorAll("th").forEach(th => th.classList.remove("asc", "desc"));
 
-<table class="sortable">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Analysis Experience</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Kim Parsons</td>
-      <td>SRKW</td>
-    </tr>
-    <tr>
-      <td>Krista Nichols</td>
-      <td>SI Omics, Bycatch</td>
-    </tr>
-    <tr>
-      <td>Meredith Everett</td>
-      <td>eDNA</td>
-    </tr>
-    <tr>
-      <td>Piper Schwenke</td>
-      <td>Forensics</td>
-    </tr>
-    <tr>
-      <td>Joanna Griffiths</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>Emma Horton</td>
-      <td>None</td>
-    </tr>
-  </tbody>
-</table>
+      headerCell.classList.toggle("asc", !isAscending);
+      headerCell.classList.toggle("desc", isAscending);
+
+      rows.sort((rowA, rowB) => {
+        const textA = rowA.children[columnIndex].textContent.trim().toLowerCase();
+        const textB = rowB.children[columnIndex].textContent.trim().toLowerCase();
+
+        if (textA === "—" || textA === "") return 1;
+        if (textB === "—" || textB === "") return -1;
+
+        const comparison = textA.localeCompare(textB);
+        return isAscending ? -comparison : comparison;
+      });
+
+      rows.forEach(row => tbody.appendChild(row));
+    });
+  });
+</script>
