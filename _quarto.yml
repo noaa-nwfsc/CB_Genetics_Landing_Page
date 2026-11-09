@@ -48,6 +48,8 @@ website:
         href: content/04_data-management.qmd
       - text: Sedna Resources
         href: content/05_sedna-resources.qmd
+      - text: People
+        href: content/06_People.qmd
       - href: content/acknowledgements.qmd
         text: Acknowledgements
 
