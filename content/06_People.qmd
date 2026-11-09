@@ -62,27 +62,47 @@ format: html
   <tbody>
     <tr>
       <td>Kim Parsons</td>
-      <td>SRKW</td>
+      <td>SRKW, eDNA</td>
     </tr>
     <tr>
       <td>Krista Nichols</td>
-      <td>SI Omics, Bycatch</td>
+      <td>SI Omics, Pop Gen, Bycatch, GSI</td>
     </tr>
     <tr>
       <td>Meredith Everett</td>
-      <td>eDNA</td>
+      <td>eDNA, Deep-sea corals, RADSeq, Genome Skimming, Reference Database constructions</td>
+    </tr>
+    <tr>
+      <td>Michelle Hauer</td>
+      <td>eDNA, metabarcoding, geospatial modeling, qPCR</td>
     </tr>
     <tr>
       <td>Piper Schwenke</td>
-      <td>Forensics</td>
+      <td>Forensics, Sanger Sequencing, </td>
     </tr>
     <tr>
       <td>Joanna Griffiths</td>
-      <td>—</td>
+      <td>WGS, RNASeq, WGBS, Quant Gen, Pop Gen, GWAS, Chinook</td>
+    </tr>
+    <tr>
+      <td>Ewann Berntson</td>
+      <td>GTseq, eDNA, Chinook, Steelhead</td>
+    </tr>    
+    <tr>
+      <td>Mia Nahom</td>
+      <td>RADseq, Pop Gen, GTseq, RNASeq, Genome Assembly and Annotation</td>
     </tr>
     <tr>
       <td>Emma Horton</td>
-      <td>—</td>
+      <td>eDNA, qPCR, GTseq</td>
+    </tr>
+    <tr>
+      <td>Sam Engster</td>
+      <td>eDNA, qPCR</td>
+    </tr>
+    <tr>
+      <td>Anita Wray</td>
+      <td>GTseq, RADseq, Epigenetic Aging, CKMR</td>
     </tr>
   </tbody>
 </table>
