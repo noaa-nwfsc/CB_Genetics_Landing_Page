@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sortable Table – CB Genetics Landing Page</title>
+<title>CB Genetics and Evolution Team Members – CB Genetics Landing Page</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -80,8 +80,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.css">
-<script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/sortable.min.js"></script>
 
 
 </head>
@@ -383,7 +381,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cb-genetics-people" id="toc-cb-genetics-people" class="nav-link active" data-scroll-target="#cb-genetics-people">CB Genetics People</a></li>
+  <li><a href="#cb-genetics-and-evolution-team-members" id="toc-cb-genetics-and-evolution-team-members" class="nav-link active" data-scroll-target="#cb-genetics-and-evolution-team-members">CB Genetics and Evolution Team Members</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/edit/main/content/06_People.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/blob/main/content/06_People.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://noaa-nwfsc.github.io/CB_Genetics_Landing_Page/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -393,7 +391,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sortable Table</h1>
+<h1 class="title">CB Genetics and Evolution Team Members</h1>
 </div>
 
 
@@ -410,9 +408,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="cb-genetics-people" class="level2">
-<h2 class="anchored" data-anchor-id="cb-genetics-people">CB Genetics People</h2>
-<table>
+<section id="cb-genetics-and-evolution-team-members" class="level2">
+<h2 class="anchored" data-anchor-id="cb-genetics-and-evolution-team-members">CB Genetics and Evolution Team Members</h2>
+<style>
+  .custom-sortable-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 1rem 0;
+  }
+  .custom-sortable-table th,
+  .custom-sortable-table td {
+    border: 1px solid #d1d5db;
+    padding: 10px 14px;
+    text-align: left;
+  }
+  .custom-sortable-table th {
+    background-color: #f3f4f6;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 28px;
+  }
+  .custom-sortable-table th:hover {
+    background-color: #e5e7eb;
+  }
+  .custom-sortable-table th::after {
+    content: "⇅";
+    position: absolute;
+    right: 10px;
+    color: #9ca3af;
+    font-size: 0.85em;
+  }
+  .custom-sortable-table th.asc::after {
+    content: "▲";
+    color: #111827;
+  }
+  .custom-sortable-table th.desc::after {
+    content: "▼";
+    color: #111827;
+  }
+  .custom-sortable-table tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+</style>
+<table class="custom-sortable-table" id="teamTable">
 <thead>
 <tr>
 <th>
@@ -474,68 +514,34 @@ Emma Horton
 </tr>
 </tbody>
 </table>
-<table class="sortable">
-<thead>
-<tr>
-<th>
-Name
-</th>
-<th>
-Analysis Experience
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Kim Parsons
-</td>
-<td>
-SRKW
-</td>
-</tr>
-<tr>
-<td>
-Krista Nichols
-</td>
-<td>
-SI Omics, Bycatch
-</td>
-</tr>
-<tr>
-<td>
-Meredith Everett
-</td>
-<td>
-eDNA
-</td>
-</tr>
-<tr>
-<td>
-Piper Schwenke
-</td>
-<td>
-Forensics
-</td>
-</tr>
-<tr>
-<td>
-Joanna Griffiths
-</td>
-<td>
-None
-</td>
-</tr>
-<tr>
-<td>
-Emma Horton
-</td>
-<td>
-None
-</td>
-</tr>
-</tbody>
-</table>
+<script>
+  document.querySelectorAll("#teamTable th").forEach((headerCell, columnIndex) => {
+    headerCell.addEventListener("click", () => {
+      const table = headerCell.closest("table");
+      const tbody = table.querySelector("tbody");
+      const rows = Array.from(tbody.querySelectorAll("tr"));
+      const isAscending = headerCell.classList.contains("asc");
+
+      table.querySelectorAll("th").forEach(th => th.classList.remove("asc", "desc"));
+
+      headerCell.classList.toggle("asc", !isAscending);
+      headerCell.classList.toggle("desc", isAscending);
+
+      rows.sort((rowA, rowB) => {
+        const textA = rowA.children[columnIndex].textContent.trim().toLowerCase();
+        const textB = rowB.children[columnIndex].textContent.trim().toLowerCase();
+
+        if (textA === "—" || textA === "") return 1;
+        if (textB === "—" || textB === "") return -1;
+
+        const comparison = textA.localeCompare(textB);
+        return isAscending ? -comparison : comparison;
+      });
+
+      rows.forEach(row => tbody.appendChild(row));
+    });
+  });
+</script>
 
 
 </section>
